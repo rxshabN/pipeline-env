@@ -9,6 +9,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -38,6 +40,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -67,6 +71,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -96,6 +102,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -125,6 +133,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -154,6 +164,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -183,6 +195,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -212,6 +226,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -241,6 +257,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -270,6 +288,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -299,6 +319,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -328,6 +350,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -357,6 +381,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -386,6 +412,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -415,6 +443,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -444,6 +474,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -473,6 +505,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -502,6 +536,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -531,6 +567,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -560,6 +598,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -589,6 +629,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -618,6 +660,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -647,6 +691,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -676,6 +722,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -705,6 +753,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -734,6 +784,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -763,6 +815,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -792,6 +846,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -821,6 +877,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -850,6 +908,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -879,6 +939,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -908,6 +970,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -937,6 +1001,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -966,6 +1032,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -995,6 +1063,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1024,6 +1094,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1053,6 +1125,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1082,6 +1156,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1111,6 +1187,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1140,6 +1218,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1169,6 +1249,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1198,6 +1280,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1227,6 +1311,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1256,6 +1342,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1285,6 +1373,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1314,6 +1404,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1343,6 +1435,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1372,6 +1466,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1401,6 +1497,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1430,6 +1528,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1459,6 +1559,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1488,6 +1590,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1517,6 +1621,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1546,6 +1652,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1575,6 +1683,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1604,6 +1714,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1633,6 +1745,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1662,6 +1776,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1691,6 +1807,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1720,6 +1838,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1749,6 +1869,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1778,6 +1900,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1807,6 +1931,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1836,6 +1962,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1865,6 +1993,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1894,6 +2024,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1923,6 +2055,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1952,6 +2086,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -1981,6 +2117,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2010,6 +2148,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2039,6 +2179,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2068,6 +2210,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2097,6 +2241,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2126,6 +2272,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2155,6 +2303,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2184,6 +2334,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2213,6 +2365,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2242,6 +2396,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2271,6 +2427,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2300,6 +2458,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2329,6 +2489,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2358,6 +2520,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2387,6 +2551,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2416,6 +2582,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2445,6 +2613,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2474,6 +2644,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2503,6 +2675,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2532,6 +2706,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2561,6 +2737,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2590,6 +2768,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2619,6 +2799,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2648,6 +2830,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2677,6 +2861,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2706,6 +2892,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2735,6 +2923,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2764,6 +2954,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2793,6 +2985,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2822,6 +3016,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2851,6 +3047,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2880,6 +3078,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2909,6 +3109,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2938,6 +3140,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2967,6 +3171,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -2996,6 +3202,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3025,6 +3233,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3054,6 +3264,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3083,6 +3295,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3112,6 +3326,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3141,6 +3357,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3170,6 +3388,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3199,6 +3419,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3228,6 +3450,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3257,6 +3481,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3286,6 +3512,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3315,6 +3543,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3344,6 +3574,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3373,6 +3605,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3402,6 +3636,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3431,6 +3667,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3460,6 +3698,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3489,6 +3729,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3518,6 +3760,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3547,6 +3791,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3576,6 +3822,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3605,6 +3853,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3634,6 +3884,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3663,6 +3915,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3692,6 +3946,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3721,6 +3977,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3750,6 +4008,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3779,6 +4039,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3808,6 +4070,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3837,6 +4101,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3866,6 +4132,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3895,6 +4163,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3924,6 +4194,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3953,6 +4225,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -3982,6 +4256,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4011,6 +4287,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4040,6 +4318,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4069,6 +4349,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4098,6 +4380,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4127,6 +4411,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4156,6 +4442,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4185,6 +4473,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4214,6 +4504,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4243,6 +4535,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4272,6 +4566,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4301,6 +4597,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4330,6 +4628,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4359,6 +4659,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4388,6 +4690,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4417,6 +4721,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4446,6 +4752,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4475,6 +4783,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4504,6 +4814,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4533,6 +4845,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4562,6 +4876,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4591,6 +4907,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4620,6 +4938,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4649,6 +4969,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4678,6 +5000,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4707,6 +5031,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4736,6 +5062,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4765,6 +5093,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4794,6 +5124,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4823,6 +5155,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4852,6 +5186,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4881,6 +5217,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4910,6 +5248,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4939,6 +5279,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4968,6 +5310,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -4997,6 +5341,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5026,6 +5372,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5055,6 +5403,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5084,6 +5434,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5113,6 +5465,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5142,6 +5496,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5171,6 +5527,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5200,6 +5558,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5229,6 +5589,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5258,6 +5620,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5287,6 +5651,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5316,6 +5682,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"
@@ -5345,6 +5713,8 @@
           "run",
           "--rm",
           "-i",
+          "--network",
+          "none",
           "-v",
           "C:\\Users\\nagwa\\OneDrive\\Desktop\\Coding\\swe-bench-rl-env/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
           "hud-transmission-env"

@@ -15,7 +15,6 @@ class DefaultTestCasesPassingGrader(Grader):
     @classmethod
     def compute_score(cls, state: EnvironmentState) -> float:
         import subprocess
-        # fallback command (not used in our flow but kept for safety)
         if subprocess.run(["true"]).returncode == 0:
             return 1.0
         return 0.0
@@ -34,20 +33,17 @@ class AgentPatchGrader(Grader):
         base: str,
         test: str,
         golden: str,
-        # --- FIX: Explicitly accept the argument causing the crash ---
         jest_test_files: list[str] | None = None,
         playwright_test_files: list[str] | None = None,
         mocha_test_files: list[str] | None = None,
         test_files: list[str] | None = None,
-        **kwargs, # Accept any other extra arguments safely
+        **kwargs,
     ) -> tuple[float, dict]:
         """
         Compute a score based on whether the agent patch fixes the issue.
         """
         from .app import ONLY_SERVER
 
-        # Map 'jest_test_files' (from the template tasks) to 'test_files' (for our runner)
-        # This fixes the disconnect between the generation script and the runner
         actual_files_to_run = test_files or jest_test_files or []
 
         runner = GradingRunner(
@@ -56,7 +52,7 @@ class AgentPatchGrader(Grader):
             golden=golden,
             playwright_test_files=playwright_test_files,
             mocha_test_files=mocha_test_files,
-            test_files=actual_files_to_run, # Pass the mapped files here
+            test_files=actual_files_to_run,
             only_server=ONLY_SERVER,
         )
 

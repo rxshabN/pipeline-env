@@ -11,7 +11,7 @@ from hud_controller.graders import AgentPatchGrader
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -39,7 +39,7 @@ def transmission_05aef3e(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -67,7 +67,7 @@ def transmission_1cb24a7(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -95,7 +95,7 @@ def transmission_25d2ebf(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -123,7 +123,7 @@ def transmission_4318a6f(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -151,7 +151,7 @@ def transmission_0f7f460(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -179,7 +179,7 @@ def transmission_2a3a8ea(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -207,7 +207,7 @@ def transmission_41dd2cf(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -235,7 +235,7 @@ def transmission_454b810(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -263,7 +263,7 @@ def transmission_0715897(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -291,7 +291,7 @@ def transmission_e7d4a69(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -319,7 +319,7 @@ def transmission_894c085(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -347,7 +347,7 @@ def transmission_bf5507f(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -375,7 +375,7 @@ def transmission_08ec7fb(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -403,7 +403,7 @@ def transmission_9e15394(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -431,7 +431,7 @@ def transmission_03c2dbd(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -459,7 +459,7 @@ def transmission_76d854d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -487,7 +487,7 @@ def transmission_24f58f7(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -515,7 +515,7 @@ def transmission_088232f(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -543,7 +543,7 @@ def transmission_47eb4ee(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -571,7 +571,7 @@ def transmission_cbd65ae(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -599,7 +599,7 @@ def transmission_50eacf6(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -627,7 +627,7 @@ def transmission_b3912fa(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -655,7 +655,7 @@ def transmission_90859fe(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -683,7 +683,7 @@ def transmission_60e5d98(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -711,7 +711,7 @@ def transmission_affb03a(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -739,7 +739,7 @@ def transmission_7e4b4f1(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -767,7 +767,7 @@ def transmission_6224039(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -795,7 +795,7 @@ def transmission_b0a6bf9(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -823,7 +823,7 @@ def transmission_3e5a77d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -851,7 +851,7 @@ def transmission_9fc9daf(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -879,7 +879,7 @@ def transmission_fa8be1b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -907,7 +907,7 @@ def transmission_a76a07a(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -935,7 +935,7 @@ def transmission_2c2011d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -963,7 +963,7 @@ def transmission_4657d21(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -991,7 +991,7 @@ def transmission_d6f5e60(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1019,7 +1019,7 @@ def transmission_9748f42(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1047,7 +1047,7 @@ def transmission_09b67c8(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1075,7 +1075,7 @@ def transmission_d935d36(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1103,7 +1103,7 @@ def transmission_2ff3ae0(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1131,7 +1131,7 @@ def transmission_1568659(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1159,7 +1159,7 @@ def transmission_152f3e9(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1187,7 +1187,7 @@ def transmission_edc59ba(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1215,7 +1215,7 @@ def transmission_7c11809(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1243,7 +1243,7 @@ def transmission_f06cb37(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1271,7 +1271,7 @@ def transmission_168d56c(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1299,7 +1299,7 @@ def transmission_ca11c33(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1327,7 +1327,7 @@ def transmission_468de87(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1355,7 +1355,7 @@ def transmission_2394789(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1383,7 +1383,7 @@ def transmission_9d433ff(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1411,7 +1411,7 @@ def transmission_df1dc58(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1439,7 +1439,7 @@ def transmission_22cde5d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1467,7 +1467,7 @@ def transmission_10d0470(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1495,7 +1495,7 @@ def transmission_5e51fda(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1523,7 +1523,7 @@ def transmission_45298e5(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1551,7 +1551,7 @@ def transmission_581d9c3(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1579,7 +1579,7 @@ def transmission_a494da4(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1607,7 +1607,7 @@ def transmission_5683751(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1635,7 +1635,7 @@ def transmission_2e46bad(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1663,7 +1663,7 @@ def transmission_64d9d57(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1691,7 +1691,7 @@ def transmission_36f33c0(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1719,7 +1719,7 @@ def transmission_a952a07(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1747,7 +1747,7 @@ def transmission_424a9b5(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1775,7 +1775,7 @@ def transmission_2e7448c(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1803,7 +1803,7 @@ def transmission_1c421d6(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1831,7 +1831,7 @@ def transmission_c697d95(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1859,7 +1859,7 @@ def transmission_eb58996(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1887,7 +1887,7 @@ def transmission_0259edb(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1915,7 +1915,7 @@ def transmission_fbfbfac(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1943,7 +1943,7 @@ def transmission_449549c(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1971,7 +1971,7 @@ def transmission_8873f2a(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -1999,7 +1999,7 @@ def transmission_27f3a5b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2027,7 +2027,7 @@ def transmission_97da2ad(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2055,7 +2055,7 @@ def transmission_2211086(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2083,7 +2083,7 @@ def transmission_9c17463(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2111,7 +2111,7 @@ def transmission_6426168(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2139,7 +2139,7 @@ def transmission_ddac059(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2167,7 +2167,7 @@ def transmission_802619e(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2195,7 +2195,7 @@ def transmission_2cf9678(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2223,7 +2223,7 @@ def transmission_ea500ec(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2251,7 +2251,7 @@ def transmission_474a30a(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2279,7 +2279,7 @@ def transmission_2999e71(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2307,7 +2307,7 @@ def transmission_e8fcb02(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2335,7 +2335,7 @@ def transmission_9f8a7a6(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2363,7 +2363,7 @@ def transmission_d63165e(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2391,7 +2391,7 @@ def transmission_c60bb5b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2419,7 +2419,7 @@ def transmission_033d698(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2447,7 +2447,7 @@ def transmission_39e3e1d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2475,7 +2475,7 @@ def transmission_848212e(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2503,7 +2503,7 @@ def transmission_d327350(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2531,7 +2531,7 @@ def transmission_211e3fc(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2559,7 +2559,7 @@ def transmission_4461aa6(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2587,7 +2587,7 @@ def transmission_649fd4d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2615,7 +2615,7 @@ def transmission_e0753fe(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2643,7 +2643,7 @@ def transmission_42a0106(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2671,7 +2671,7 @@ def transmission_0e5f7f8(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2699,7 +2699,7 @@ def transmission_862abe9(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2727,7 +2727,7 @@ def transmission_977a190(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2755,7 +2755,7 @@ def transmission_68f6f49(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2783,7 +2783,7 @@ def transmission_2b90a5f(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2811,7 +2811,7 @@ def transmission_9a5d9a0(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2839,7 +2839,7 @@ def transmission_8085ef6(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2867,7 +2867,7 @@ def transmission_ec6cb67(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2895,7 +2895,7 @@ def transmission_8a35aa0(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2923,7 +2923,7 @@ def transmission_554ba06(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2951,7 +2951,7 @@ def transmission_19bc155(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -2979,7 +2979,7 @@ def transmission_42f26aa(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3007,7 +3007,7 @@ def transmission_250e055(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3035,7 +3035,7 @@ def transmission_2d2270c(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3063,7 +3063,7 @@ def transmission_4ea9c87(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3091,7 +3091,7 @@ def transmission_ecc7c18(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3119,7 +3119,7 @@ def transmission_89d6533(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3147,7 +3147,7 @@ def transmission_76fc42b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3175,7 +3175,7 @@ def transmission_9fb590d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3203,7 +3203,7 @@ def transmission_dde626d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3231,7 +3231,7 @@ def transmission_988d8ff(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3259,7 +3259,7 @@ def transmission_c7466b3(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3287,7 +3287,7 @@ def transmission_b1cc968(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3315,7 +3315,7 @@ def transmission_83ffa6b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3343,7 +3343,7 @@ def transmission_8b983b3(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3371,7 +3371,7 @@ def transmission_ec79a2a(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3399,7 +3399,7 @@ def transmission_445aad5(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3427,7 +3427,7 @@ def transmission_0da1cbb(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3455,7 +3455,7 @@ def transmission_c50da43(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3483,7 +3483,7 @@ def transmission_f8b3514(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3511,7 +3511,7 @@ def transmission_41c0f88(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3539,7 +3539,7 @@ def transmission_c3db52e(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3567,7 +3567,7 @@ def transmission_e9a7ddf(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3595,7 +3595,7 @@ def transmission_513f4bc(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3623,7 +3623,7 @@ def transmission_142b2a0(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3651,7 +3651,7 @@ def transmission_3237323(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3679,7 +3679,7 @@ def transmission_85c11b7(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3707,7 +3707,7 @@ def transmission_34cb56b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3735,7 +3735,7 @@ def transmission_256b436(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3763,7 +3763,7 @@ def transmission_84d65d8(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3791,7 +3791,7 @@ def transmission_67a0784(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3819,7 +3819,7 @@ def transmission_c0bb2d4(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3847,7 +3847,7 @@ def transmission_a28b07b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3875,7 +3875,7 @@ def transmission_bdac708(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3903,7 +3903,7 @@ def transmission_c1faebc(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3931,7 +3931,7 @@ def transmission_f79a75c(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3959,7 +3959,7 @@ def transmission_a134445(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -3987,7 +3987,7 @@ def transmission_eb33b2f(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4015,7 +4015,7 @@ def transmission_7aeb5d8(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4043,7 +4043,7 @@ def transmission_76f44b4(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4071,7 +4071,7 @@ def transmission_1cc9da2(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4099,7 +4099,7 @@ def transmission_a250690(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4127,7 +4127,7 @@ def transmission_6e91136(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4155,7 +4155,7 @@ def transmission_4dd25d8(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4183,7 +4183,7 @@ def transmission_66638cc(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4211,7 +4211,7 @@ def transmission_bd895b5(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4239,7 +4239,7 @@ def transmission_9c3acc7(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4267,7 +4267,7 @@ def transmission_13ad2b5(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4295,7 +4295,7 @@ def transmission_cddd400(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4323,7 +4323,7 @@ def transmission_318d60b(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4351,7 +4351,7 @@ def transmission_6f9cba4(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4379,7 +4379,7 @@ def transmission_8d75736(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4407,7 +4407,7 @@ def transmission_2c09e99(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4435,7 +4435,7 @@ def transmission_41b2a80(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4463,7 +4463,7 @@ def transmission_43b9d5c(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4491,7 +4491,7 @@ def transmission_0e321c2(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4519,7 +4519,7 @@ def transmission_e2be142(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4547,7 +4547,7 @@ def transmission_b61b1e2(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4575,7 +4575,7 @@ def transmission_3d2fa18(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4603,7 +4603,7 @@ def transmission_dbd9130(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4631,7 +4631,7 @@ def transmission_617df25(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4659,7 +4659,7 @@ def transmission_ec94c90(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4687,7 +4687,7 @@ def transmission_60b802a(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4715,7 +4715,7 @@ def transmission_af8e9e6(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4743,7 +4743,7 @@ def transmission_af4a953(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4771,7 +4771,7 @@ def transmission_3008a99(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4799,7 +4799,7 @@ def transmission_8c40fd8(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4827,7 +4827,7 @@ def transmission_94ee81f(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4855,7 +4855,7 @@ def transmission_4aba9b6(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4883,7 +4883,7 @@ def transmission_953f073(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4911,7 +4911,7 @@ def transmission_fb39c46(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4939,7 +4939,7 @@ def transmission_916d418(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4967,7 +4967,7 @@ def transmission_312d182(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -4995,7 +4995,7 @@ def transmission_43d1ece(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -5023,7 +5023,7 @@ def transmission_a459e5e(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -5051,7 +5051,7 @@ def transmission_c0ed825(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -5079,7 +5079,7 @@ def transmission_0155252(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -5107,7 +5107,7 @@ def transmission_f59118d(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -5135,7 +5135,7 @@ def transmission_c2fb393(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",
@@ -5163,7 +5163,7 @@ def transmission_ce51f1a(state: EnvironmentState) -> Grade:
     Fix the issue in Transmission. 
     The environment is reset to the commit BEFORE this fix.
     """,
-    hints=[],  # <--- FIX: Added required empty hints list
+    hints=[],
     difficulty="hard",
     task_type="coding",
     review_level="no-review",

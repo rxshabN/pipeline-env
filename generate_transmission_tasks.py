@@ -1,20 +1,16 @@
 import json
 import os
 
-# 1. Load your mined tasks
 with open("hud_tasks.json", "r") as f:
     tasks = json.load(f)
 
-# 2. Start the python file content
 output_code = """from hud_controller.spec import EnvironmentState, Grade, problem
 from hud_controller.graders import AgentPatchGrader
 
 # AUTOMATICALLY GENERATED FROM hud_tasks.json
 """
 
-# 3. Generate a function for each task
 for task in tasks:
-    # Clean up the ID to be a valid python function name
     func_name = task['task_id'].replace("-", "_")
     safe_msg = task['message'].replace('"', "'")
     
@@ -49,7 +45,6 @@ def {func_name}(state: EnvironmentState) -> Grade:
 """
     output_code += task_code
 
-# 4. Write to the source folder
 output_path = "src/hud_controller/extractors/transmission_tasks.py"
 os.makedirs(os.path.dirname(output_path), exist_ok=True)
 

@@ -6,32 +6,25 @@ import click
 from mcp.server.fastmcp import FastMCP 
 from pydantic import Field
 
-# Import your Task Definitions
 import hud_controller.extractors.transmission_tasks
 from hud_controller.utils import import_submodules
 
-# Import Core Framework
 from .setup import setup_codebase, start_dinit
 from .spec import PROBLEM_REGISTRY, EnvironmentState, Grade, ProblemSpec
 from .tools.base import ToolResult
 
-# Import ONLY the tools useful for coding
 from .tools.bash import BashTool
 from .tools.edit import Command, EditTool
 
 logger = logging.getLogger(__name__)
 
-# --- THE FIX: Define this variable so graders.py can import it ---
 ONLY_SERVER = False 
 
-# Initialize Server
 mcp = FastMCP("transmission_eval", port=8039, log_level="DEBUG", debug=True)
 
-# Initialize Tools
 edit_tool = EditTool()
 bash_tool = BashTool()
 
-# --- TOOL DEFINITIONS ---
 @mcp.tool(name="str_replace_editor")
 async def str_replace_editor(
     *, command: Command, path: str, file_text: Optional[str] = None, view_range: Optional[list[int]] = None, 
@@ -48,7 +41,6 @@ async def bash(*, command: str, restart: bool = False) -> ToolResult:
     """Run bash commands."""
     return await bash_tool(command=command, restart=restart)
 
-# --- LIFECYCLE TOOLS ---
 
 template = """
 You are working on the Transmission (C++) codebase.
@@ -81,8 +73,6 @@ async def grade_problem(problem_id: str) -> Grade:
     spec = _get_spec(problem_id)
     state = EnvironmentState()
     return spec.solution_fn(state)
-
-# --- ENTRY POINT ---
 
 @click.command()
 def main():

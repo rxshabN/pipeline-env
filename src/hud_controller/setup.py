@@ -6,7 +6,6 @@ import shutil
 from pathlib import Path
 from typing import Any
 
-# Wrap imports in try/except to prevent crashes if manual_dinit is missing
 try:
     from .manual_dinit import ServiceLoader, SimpleDinit
 except ImportError:
@@ -15,7 +14,6 @@ except ImportError:
 
 logger = logging.getLogger(__name__)
 
-# Configuration
 TEST_MODE = os.environ.get("MCP_TESTING_MODE", "1") in ["1", "true"]
 XFCE_STARTUP_DELAY = 0
 CHROMIUM_STARTUP_DELAY = 0
@@ -47,11 +45,9 @@ async def start_dinit():
 def subprocess_run(cmd, cwd=None):
     """Helper to run shell commands with logging."""
     try:
-        # Run with shell=False for list args is safer and cleaner
         subprocess.run(cmd, cwd=cwd, check=True, capture_output=True, text=True)
     except subprocess.CalledProcessError as e:
         logger.error(f"Command failed: {' '.join(cmd)}\nStderr: {e.stderr}\nStdout: {e.stdout}")
-        # We allow it to continue, as sometimes git warnings trigger this but aren't fatal
 
 def setup_codebase(
     base: str,
@@ -61,7 +57,6 @@ def setup_codebase(
     """
     Setup the codebase: Time Travel + Submodule Sync + Clean Build.
     """
-    # 1. Get Project Directory
     project_dir = os.environ.get("REPO_PATH", "/home/ubuntu/repo")
     
     if not os.path.exists(project_dir):
@@ -71,22 +66,16 @@ def setup_codebase(
     logger.info(f"📂 Switching context to {project_dir}")
     os.chdir(project_dir)
 
-    # 2. Time Travel: Checkout the buggy commit (Base)
     logger.info(f"🕰️ Time Traveling to Buggy Commit: {base}")
     subprocess_run(["git", "checkout", "-f", base])
     
-    # 3. CRITICAL FIX: Sync Submodules
-    # Transmission relies on submodules. When we change commits, we MUST update them.
     logger.info("🔄 Synchronizing Git Submodules...")
     subprocess_run(["git", "submodule", "update", "--init", "--recursive"])
 
-    # 4. Test Injection: Checkout tests from the solution (Golden)
     if golden:
         logger.info(f"💉 Injecting Tests from Golden Commit: {golden}")
         subprocess_run(["git", "checkout", golden, "--", "tests/"])
 
-    # 5. Clean Build
-    # CMake gets confused if we change git history underneath it. We must start fresh.
     build_dir = Path(project_dir) / "build"
     
     if build_dir.exists():
@@ -110,9 +99,6 @@ def setup_codebase(
         cwd=str(build_dir)
     )
     
-    # 6. Initial Build
-    # We build once here to ensure dependencies (libdeflate, etc.) are compiled 
-    # before the agent starts. This prevents the linker errors you saw.
     logger.info("🏗️ Running initial build (compiling dependencies)...")
     subprocess_run(["ninja"], cwd=str(build_dir))
     subprocess_run(["chown", "-R", "ubuntu:ubuntu", str(build_dir)])

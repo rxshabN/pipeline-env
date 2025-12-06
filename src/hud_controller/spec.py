@@ -19,7 +19,6 @@ def validate_grader_name(name: str) -> str:
     return name
 
 
-# Type for grader names that don't contain numbers
 GraderName = Annotated[str, "A grader name containing only letters, underscores, and hyphens"]
 
 
@@ -32,7 +31,6 @@ class SubGrade:
     metadata: Dict[str, Any] = field(default_factory=dict)
 
     def __post_init__(self):
-        # Validate the name, since we use hyphens and numbers to distinguish multiple subgraders of the same type
         validate_grader_name(self.name)
 
 
@@ -57,12 +55,10 @@ class Grade:
 
     @staticmethod
     def from_subscores(subscores: list[SubGrade]) -> "Grade":
-        # First pass: count occurrences of each name
         name_counts = {}
         for subscore in subscores:
             name_counts[subscore.name] = name_counts.get(subscore.name, 0) + 1
 
-        # Second pass: assign final names
         subscores_dict = {}
         weights_dict = {}
         metadata_dict = {}
@@ -72,10 +68,8 @@ class Grade:
             original_name = subscore.name
 
             if name_counts[original_name] == 1:
-                # No duplicates, use original name
                 final_name = original_name
             else:
-                # Has duplicates, add number suffix
                 if original_name not in name_usage:
                     name_usage[original_name] = 1
                 else:
@@ -85,7 +79,6 @@ class Grade:
             subscores_dict[final_name] = subscore.score
             weights_dict[final_name] = subscore.weight
 
-            # Add metadata using the final name as the key
             if subscore.metadata:
                 metadata_dict[final_name] = subscore.metadata
 
@@ -102,17 +95,14 @@ class EnvironmentState:
     @classmethod
     def from_sqlite(cls, sqlite_path: str) -> "EnvironmentState":
         """Create an EnvironmentState from an existing SQLite database file."""
-        # This method is kept for compatibility but no longer uses the database
         logger.warning("from_sqlite method called but database functionality is disabled")
         return cls()
 
     def export_to_sqlite(self, sqlite_path: str) -> None:
         """Export the current database state to a new SQLite file."""
-        # This method is kept for compatibility but no longer uses the database
         logger.warning("export_to_sqlite method called but database functionality is disabled")
 
 
-# the different levels of review
 ReviewLevel = Literal[
     "no-review",
     "creator-reviewed",
@@ -123,17 +113,13 @@ ReviewLevel = Literal[
 @dataclass
 class HintSpec:
     hint_type: Literal["legit", "leaky"]
-    # the text of the hint (provided to the model)
     text: str
-    # the reason why the hint is legitimate (for human reviewers)
     why_legitmate: str | None = None
 
 
 
-# New registry machinery
 @dataclass
 class ProblemSpec:
-    # required fields (no defaults)
     id: str
     description: str
     hints: list[HintSpec]
@@ -141,7 +127,6 @@ class ProblemSpec:
     task_type: str
     solution_fn: Callable[[EnvironmentState], Grade] = field(repr=False)
     review_level: ReviewLevel
-    # optional fields (with defaults)
     config: dict[str, Any] | None
     image_base_string: str
     startup_command: str
@@ -152,11 +137,7 @@ class ProblemSpec:
     golden: str
 
 
-# global list of all registered problems
 PROBLEM_REGISTRY: list[ProblemSpec] = []
-
-# decorator to register a problem spec alongside its grading function
-
 
 def problem(
     *,
@@ -207,7 +188,6 @@ class Grader:
         """Grade the current state and return a SubGrade."""
         result = cls.compute_score(state, **kwargs)
 
-        # Handle both float and tuple return types
         if isinstance(result, tuple):
             score, metadata = result
         else:
@@ -231,7 +211,6 @@ class Grader:
     def any(cls, weight: float, subgrades: List[SubGrade]) -> SubGrade:
         """Return a SubGrade that passes if any of the subgrades pass."""
         max_score = max(subgrade.score for subgrade in subgrades)
-        # Combine metadata from all subgrades
         combined_metadata = {
             "subgrades": [sg.name for sg in subgrades],
             "subgrade_metadata": {sg.name: sg.metadata for sg in subgrades if sg.metadata},
@@ -248,7 +227,6 @@ class Grader:
     def all(cls, weight: float, subgrades: List[SubGrade]) -> SubGrade:
         """Return a SubGrade that passes only if all subgrades pass."""
         min_score = min(subgrade.score for subgrade in subgrades)
-        # Combine metadata from all subgrades
         combined_metadata = {
             "subgrades": [sg.name for sg in subgrades],
             "subgrade_metadata": {sg.name: sg.metadata for sg in subgrades if sg.metadata},

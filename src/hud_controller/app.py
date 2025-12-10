@@ -72,7 +72,7 @@ async def grade_problem(problem_id: str) -> Grade:
     """Run tests and return the grade."""
     spec = _get_spec(problem_id)
     state = EnvironmentState()
-    return spec.solution_fn(state)
+    return await asyncio.to_thread(spec.solution_fn, state)
 
 @click.command()
 def main():

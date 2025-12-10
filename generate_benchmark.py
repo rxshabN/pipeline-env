@@ -7,38 +7,43 @@ def create_rich_prompt(task):
     files = task.get("files", [])
     files_list = "\n".join([f"- {f}" for f in files]) if files else "See repository"
     
-    return f"""Task: {task['task_id']}
-            Problem: {task['message']}
+    return f"""## Task: {task['task_id']}
 
-            Issue
-            GitHub Issue: {task['message']}
+### Bug Description
+{task['message']}
 
-            Bug Description
-            The codebase has one or more bugs and requires fixes. Tests have been written that define the expected behavior. Currently these tests FAIL. You must write code to make the tests pass.
+### Files to Modify
+The following files need to be fixed:
+{files_list}
 
-            ENVIRONMENT NOTES (IMPORTANT):
-            - The project is PRE-COMPILED. You do NOT need to run a full build.
-            - DO NOT delete the 'build' directory or run 'make clean'. This will cause a timeout/OOM.
-            - The build system is 'Ninja'. It handles incremental builds automatically.
+### Your Task
+1. Read and understand the bug description above
+2. Examine the relevant source files in `/home/ubuntu/repo/`
+3. Analyze the test files in `/home/ubuntu/repo/tests/` to understand expected behavior
+4. Modify the source files to fix the bug
 
-            Files to Modify
-            {files_list}
+### 🛑 CRITICAL RULES - READ THESE CAREFULLY BEFORE BEGINNING 🛑
 
-            Instructions
-            1. Verify the build (Incremental): cd /home/ubuntu/repo/build && ninja
-            2. Run tests to see what's failing: ctest --output-on-failure
-            3. Analyze the failing tests (look at assertions and test names).
-            4. Find relevant source files in /home/ubuntu/repo/libtransmission/
-            5. Implement the fix.
-            6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
+#### 1. NO BUILD OR TEST EXECUTION
+* **DO NOT** run `ninja`, `make`, `cmake`, `configure`, or `ctest`.
+* The environment is **Read-Only** for build artifacts. Attempts to build will crash the environment.
+* Your code is built and tested **AUTOMATICALLY** by the evaluation system when you submit.
 
-            IMPORTANT: Evaluation Rules
-            - The tests define the expected behavior - use them as your specification
-            - Write your fix based on understanding the code and tests
-            - Do NOT search for solutions outside the codebase
-            - When you are confident your fix is complete, call evaluate_tool (grade_problem)
-            - The repository is available at: /home/ubuntu/repo
-            """
+#### 2. NO HELPER SCRIPTS (Anti-Timeout Policy)
+* **DO NOT** create or run Python/Shell scripts (e.g., `/tmp/convert.py`) to generate code, map variables, or analyze files.
+* **Requirement:** You must edit the files **DIRECTLY** using `str_replace_editor` or `sed`. Do the work yourself; do not write code/scripts to do the work.
+
+#### 3. NO MASSIVE OUTPUT
+* **DO NOT** run commands that output hundreds of lines (e.g., `grep` without `head`, printing full arrays, or listing all files).
+* **Requirement:** Always pipe commands to `head -n 20`. Verify logic on a small sample (1-2 files), then apply it broadly.
+
+#### 4. SECURITY & SCOPE
+* **ONLY** modify the source files listed above.
+* **DO NOT** touch `CMakeLists.txt`, hidden `.git` directories, or build scripts.
+
+### Repository Location
+`/home/ubuntu/repo/`
+"""
 
 def main():
     parser = argparse.ArgumentParser(description="Generate the benchmark JSON file.")

@@ -12,37 +12,28 @@ from hud_controller.graders import AgentPatchGrader
 
 for task in tasks:
     func_name = task['task_id'].replace("-", "_")
-    safe_msg = task['message'].replace('"', "'")
+    safe_msg = task['message'].replace('"', "'").replace('\n', ' ')
     
-    files_list = "\\n".join([f"- {f}" for f in task.get('files', [])])
+    files_list = "\\n".join([f"  - {f}" for f in task.get('files', [])])
     
-    description = f"""Task: {task['task_id']}
-                        Problem: {safe_msg}
+    description = f"""
+Task: {task['task_id']}
+Bug: {safe_msg}
 
-                        Issue
-                        GitHub Issue: {safe_msg}
+Files to Modify:
+{files_list}
 
-                        Environment Notes
-                        - Project is PRE-COMPILED. DO NOT clean the build directory.
-                        - Use 'ninja' for fast incremental builds.
+Instructions:
+1. Examine the source files in /home/ubuntu/repo/
+2. Read the tests in /home/ubuntu/repo/tests/ to understand expected behavior
+3. Modify the source files to fix the bug
 
-                        Files to Modify
-                        {files_list}
-
-                        Instructions
-                        1. Verify the build: cd /home/ubuntu/repo/build && ninja
-                        2. Run tests to see what's failing: ctest --output-on-failure
-                        3. Analyze the failing tests (look at assertions and test names).
-                        4. Find relevant source files in /home/ubuntu/repo/libtransmission/
-                        5. Implement the fix.
-                        6. Rebuild and verify: cd /home/ubuntu/repo/build && ninja
-
-                        IMPORTANT: Evaluation Rules
-                        - The tests define the expected behavior - use them as your specification
-                        - Write your fix based on understanding the code and tests
-                        - Do NOT search for solutions outside the codebase
-                        - The repository is available at: /home/ubuntu/repo
-                        """
+CRITICAL RULES (Read Carefully):
+- NO BUILD/TEST: Do NOT run ninja, cmake, or ctest. Code is built automatically on submission.
+- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code.
+- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
+- DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+"""
 
     task_code = f"""
 @problem(

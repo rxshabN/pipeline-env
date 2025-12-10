@@ -1,8 +1,60 @@
-import asyncio  # noqa -- swapping to trio would be beneficial, but not blocking atm
+import asyncio
 import os
+import re
 import tempfile
 
 from .base import CLIResult, ToolError, ToolResult
+
+
+# =============================================================================
+# Anti-cheat: Block git commands that could reveal the fix
+# =============================================================================
+
+# These commands could allow the agent to see commit history or the golden fix
+BLOCKED_GIT_PATTERNS = [
+    # History viewing commands
+    r'\bgit\s+log\b',           # git log - shows commit history
+    r'\bgit\s+reflog\b',        # git reflog - shows reference log
+    r'\bgit\s+rev-list\b',      # git rev-list - lists commits
+    
+    # Commit inspection commands
+    r'\bgit\s+show\s+[a-f0-9]', # git show <commit> - shows commit content
+    r'\bgit\s+cat-file\b',      # git cat-file - low-level object access
+    
+    # Remote/fetch commands (shouldn't have remotes anyway, but block just in case)
+    r'\bgit\s+fetch\b',
+    r'\bgit\s+pull\b',
+    r'\bgit\s+remote\b',
+    
+    # Branch/checkout to other commits
+    r'\bgit\s+checkout\s+[a-f0-9]{7,}',  # git checkout <commit-hash>
+    r'\bgit\s+switch\s+[a-f0-9]{7,}',    # git switch <commit-hash>
+    
+    # Accessing .git directory directly
+    r'\.git/',                   # Any path containing .git/
+    r'/evaluation/',             # Block access to evaluation directory
+    r'/secure_git\b',            # Block access to secure git directory
+]
+
+# Commands that are ALLOWED (for agent's own work)
+# git diff, git status, git add, git commit, git stash - all fine
+# These help the agent track their own changes
+
+
+def is_blocked_command(command: str) -> tuple[bool, str]:
+    """
+    Check if a command should be blocked for anti-cheat reasons.
+    
+    Returns:
+        Tuple of (is_blocked, reason)
+    """
+    command_lower = command.lower()
+    
+    for pattern in BLOCKED_GIT_PATTERNS:
+        if re.search(pattern, command_lower):
+            return True, f"Command blocked: git history/remote commands are disabled to prevent cheating"
+    
+    return False, ""
 
 
 class _BashSession:
@@ -13,7 +65,7 @@ class _BashSession:
 
     command: str = "/bin/bash"
     _output_delay: float = 0.2  # seconds
-    _timeout: float = 1500.0  # seconds (25 minutes) (long to allow for compiling jenkins)
+    _timeout: float = 1500.0  # seconds (25 minutes)
     _sentinel: str = "<<exit>>"
 
     def __init__(self):
@@ -39,6 +91,7 @@ class _BashSession:
             stdin=asyncio.subprocess.PIPE,
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE,
+            cwd="/home/ubuntu",
         )
 
         self._started = True
@@ -66,6 +119,16 @@ class _BashSession:
                 f"timed out: bash has not returned in {self._timeout} seconds and must be restarted.",
             )
 
+        # =================================================================
+        # Anti-cheat: Check if command should be blocked
+        # =================================================================
+        is_blocked, reason = is_blocked_command(command)
+        if is_blocked:
+            return CLIResult(
+                output="",
+                error=reason
+            )
+
         # we know these are not None because we created the process with PIPEs
         assert self._process.stdin
         assert self._process.stdout
@@ -80,12 +143,9 @@ class _BashSession:
             async with asyncio.timeout(self._timeout):
                 while True:
                     await asyncio.sleep(self._output_delay)
-                    # if we read directly from stdout/stderr, it will wait forever for
-                    # EOF. use the StreamReader buffer directly instead.
-                    output = self._process.stdout._buffer.decode()  # pyright: ignore[reportAttributeAccessIssue]
-                    error = self._process.stderr._buffer.decode()  # pyright: ignore[reportAttributeAccessIssue]
+                    output = self._process.stdout._buffer.decode()
+                    error = self._process.stderr._buffer.decode()
                     if self._sentinel in output:
-                        # strip the sentinel and break
                         output = output[: output.index(self._sentinel)]
                         break
         except TimeoutError:
@@ -93,12 +153,10 @@ class _BashSession:
             stdout_truncated = output[:10000] + "<response clipped>" if len(output) > 10000 else output
             stderr_truncated = error[:10000] + "<response clipped>" if len(error) > 10000 else error
             
-            # Save full stdout and stderr to temporary files
             stdout_file = None
             stderr_file = None
             
             try:
-                # Create temporary files for stdout and stderr
                 with tempfile.NamedTemporaryFile(mode='w', prefix='bash_stdout_', suffix='.log', delete=False) as f:
                     f.write(output)
                     stdout_file = f.name
@@ -117,9 +175,9 @@ class _BashSession:
                     f"  STDERR: {stderr_truncated}",
                 ) from None
             except Exception:
-                # If file creation fails, fall back to original error message
                 raise ToolError(
-                    f"timed out: bash has not returned in {self._timeout} seconds and must be restarted. Full logs are saved to \n STDOUT: {stdout_truncated}\n STDERR: {stderr_truncated}",
+                    f"timed out: bash has not returned in {self._timeout} seconds and must be restarted. "
+                    f"STDOUT: {stdout_truncated}\n STDERR: {stderr_truncated}",
                 ) from None
 
         if output.endswith("\n"):
@@ -128,9 +186,8 @@ class _BashSession:
         if error.endswith("\n"):
             error = error[:-1]
 
-        # clear the buffers so that the next output can be read correctly
-        self._process.stdout._buffer.clear()  # pyright: ignore[reportAttributeAccessIssue]
-        self._process.stderr._buffer.clear()  # pyright: ignore[reportAttributeAccessIssue]
+        self._process.stdout._buffer.clear()
+        self._process.stderr._buffer.clear()
 
         return CLIResult(output=output, error=error)
 
@@ -138,7 +195,14 @@ class _BashSession:
 class BashTool:
     """
     A tool that allows the agent to run bash commands.
-    The tool parameters are defined by Anthropic and are not editable.
+    
+    Anti-cheat measures:
+    - Git history commands (log, show, reflog) are blocked
+    - Access to /evaluation/ directory is blocked
+    - Agent runs as non-root user (uid 1000)
+    
+    Allowed git commands:
+    - git diff, git status, git add, git commit (for tracking own changes)
     """
 
     _session: _BashSession | None

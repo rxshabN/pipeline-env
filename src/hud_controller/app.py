@@ -6,10 +6,10 @@ import click
 from mcp.server.fastmcp import FastMCP 
 from pydantic import Field
 
-import hud_controller.extractors.transmission_tasks
+import hud_controller.extractors.pipeline_tasks
 from hud_controller.utils import import_submodules
 
-from .setup import setup_codebase, start_dinit
+from .setup import setup_codebase
 from .spec import PROBLEM_REGISTRY, EnvironmentState, Grade, ProblemSpec
 from .tools.base import ToolResult
 
@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 
 ONLY_SERVER = False 
 
-mcp = FastMCP("transmission_eval", port=8039, log_level="DEBUG", debug=True)
+mcp = FastMCP("pipeline_eval", port=8039, log_level="DEBUG", debug=True)
 
 edit_tool = EditTool()
 bash_tool = BashTool()
@@ -43,7 +43,7 @@ async def bash(*, command: str, restart: bool = False) -> ToolResult:
 
 
 template = """
-You are working on the Transmission (C++) codebase.
+You are working on the Tekton Pipeline (Go) codebase.
 The repository is located at /home/ubuntu/repo.
 
 TASK:

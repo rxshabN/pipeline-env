@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "transmission-evals"
+name = "pipeline-evals"
 version = "0.1.0"
-description = "RL Environment for Transmission (C++) using HUD Framework"
+description = "RL Environment for Tekton Pipeline (Go) using HUD Framework"
 requires-python = ">=3.11"
 dependencies = [
     # --- HUD Framework Core ---
@@ -16,7 +16,7 @@ dependencies = [
     "httpx>=0.24.0",
     "click>=8.0.0",
     
-    # --- Transmission/Task Specific ---
+    # --- Task Specific ---
     "packaging>=23.0",
     "junitparser>=3.1.0",
     "docker>=7.0.0",

@@ -38,20 +38,10 @@ class SubGrade:
 class Grade:
     """The grade to return within the mcp.grade_problem tool."""
 
+    score: float 
     subscores: dict[str, float]
     weights: dict[str, float]
     metadata: dict[str, Any] | None
-
-    @property
-    def score(self):
-        assert self.subscores.keys() == self.weights.keys()
-        assert np.isclose(sum(self.weights.values()), 1)
-        assert min(self.subscores.values()) >= 0
-        assert max(self.subscores.values()) <= 1
-
-        score = sum([self.subscores[key] * self.weights[key] for key in self.subscores.keys()])
-
-        return np.clip(score, 0.0, 1.0)
 
     @staticmethod
     def from_subscores(subscores: list[SubGrade]) -> "Grade":
@@ -82,7 +72,22 @@ class Grade:
             if subscore.metadata:
                 metadata_dict[final_name] = subscore.metadata
 
-        return Grade(subscores=subscores_dict, weights=weights_dict, metadata=metadata_dict)
+        assert subscores_dict.keys() == weights_dict.keys()
+        
+        total_weight = sum(weights_dict.values())
+        if total_weight > 0:
+            final_score = sum([subscores_dict[k] * weights_dict[k] for k in subscores_dict.keys()]) / total_weight
+        else:
+            final_score = 0.0
+
+        final_score = float(np.clip(final_score, 0.0, 1.0))
+
+        return Grade(
+            score=final_score,
+            subscores=subscores_dict, 
+            weights=weights_dict, 
+            metadata=metadata_dict
+        )
 
 
 class EnvironmentState:

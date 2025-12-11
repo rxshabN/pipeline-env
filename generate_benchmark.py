@@ -17,21 +17,22 @@ The following files need to be fixed:
 {files_list}
 
 ### Your Task
-1. Read and understand the bug description above
-2. Examine the relevant source files in `/home/ubuntu/repo/`
-3. Analyze the test files in `/home/ubuntu/repo/tests/` to understand expected behavior
-4. Modify the source files to fix the bug
+1. Read the bug description above.
+2. Examine the source files in `/home/ubuntu/repo/`.
+3. Analyze the test files in `/home/ubuntu/repo/tests/` or files ending in `_test.go`.
+   **Note:** The tests are the "Source of Truth". They have already been updated to reflect the desired behavior. Use them as your specification.
+4. Modify the source files to fix the bug.
 
-### 🛑 CRITICAL RULES - READ THESE CAREFULLY BEFORE BEGINNING 🛑
+### 🛑 CRITICAL RULES - READ CAREFULLY BEFORE BEGINNING 🛑
 
 #### 1. NO BUILD OR TEST EXECUTION
-* **DO NOT** run `ninja`, `make`, `cmake`, `configure`, or `ctest`.
+* **DO NOT** run `go build`, `go test`, `make`, or `ko`.
 * The environment is **Read-Only** for build artifacts. Attempts to build will crash the environment.
 * Your code is built and tested **AUTOMATICALLY** by the evaluation system when you submit.
 
 #### 2. NO HELPER SCRIPTS (Anti-Timeout Policy)
 * **DO NOT** create or run Python/Shell scripts (e.g., `/tmp/convert.py`) to generate code, map variables, or analyze files.
-* **Requirement:** You must edit the files **DIRECTLY** using `str_replace_editor` or `sed`. Do the work yourself; do not write code/scripts to do the work.
+* **Requirement:** You must edit the files **DIRECTLY** using `str_replace_editor` or `sed`. Do the work yourself; do not write code to do the work.
 
 #### 3. NO MASSIVE OUTPUT
 * **DO NOT** run commands that output hundreds of lines (e.g., `grep` without `head`, printing full arrays, or listing all files).
@@ -39,10 +40,10 @@ The following files need to be fixed:
 
 #### 4. SECURITY & SCOPE
 * **ONLY** modify the source files listed above.
-* **DO NOT** touch `CMakeLists.txt`, hidden `.git` directories, or build scripts.
+* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.
 
 ### Repository Location
-`/home/ubuntu/repo/`
+`/home/ubuntu/repo/` (Tekton Pipeline)
 """
 
 def main():
@@ -73,7 +74,8 @@ def main():
                     "url": "https://mcp.hud.ai/v3/mcp",
                     "headers": {
                         "Authorization": "Bearer ${HUD_API_KEY}", 
-                        "Mcp-Image": args.image
+                        "Mcp-Image": args.image,
+                        "timeout": 900000
                     }
                 }
             }
@@ -87,7 +89,7 @@ def main():
                         "-i", 
                         "--network", "none",
                         "-v", f"{cwd}/src/hud_controller/extractors:/evaluation/src/hud_controller/extractors",
-                        "swe-bench-rl-env:0.1.0"
+                        "swe-bench-rl-env:0.1.0" 
                     ]
                 }
             }
@@ -107,7 +109,7 @@ def main():
         }
         benchmark_tasks.append(task)
 
-    output_file = "transmission_benchmark.json"
+    output_file = "pipeline_benchmark.json"
     with open(output_file, "w") as f:
         json.dump(benchmark_tasks, f, indent=2)
 
@@ -115,7 +117,7 @@ def main():
     if args.image:
         print(f"Configured for Cloud Image: {args.image}")
     else:
-        print(f"Configured for Local Docker")
+        print(f"Configured for Local Docker (swe-bench-rl-env:0.1.0)")
 
 if __name__ == "__main__":
     main()

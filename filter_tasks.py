@@ -18,7 +18,7 @@ def run_single_task(task_id, run_index):
         # This allows HUD to handle the cloud connection defined in the JSON.
         result = subprocess.run(
             [
-                "hud", "eval", "transmission_benchmark.json",
+                "hud", "eval", "pipeline_benchmark.json",  # Updated filename
                 "--task-ids", task_id,
                 "--agent", "claude",  # Explicitly set agent to avoid interactive prompt
                 "--yes",              # Skip confirmation prompts
@@ -57,6 +57,17 @@ def run_single_task(task_id, run_index):
                         score = float(score_str)
                     except ValueError:
                         pass
+        
+        # We also check for the new log format from grading_runner.py
+        if "Score:" in logs:
+             for line in logs.splitlines():
+                if "Score:" in line and "INFO" in line: # e.g. INFO: ... Score: 0.1000
+                     try:
+                        score_str = line.split("Score:")[-1].strip()
+                        score = float(score_str)
+                     except ValueError:
+                        pass
+
 
         # If Score > 0, the agent passed the test. 
         # For a benchmark of BUGS, we want the agent to FAIL (initially), 
@@ -83,8 +94,8 @@ def main():
     args = parser.parse_args()
 
     import os
-    if not os.path.exists("transmission_benchmark.json"):
-        print("❌ Error: transmission_benchmark.json not found. Run generate_benchmark.py first.")
+    if not os.path.exists("pipeline_benchmark.json"):
+        print("❌ Error: pipeline_benchmark.json not found. Run generate_benchmark.py first.")
         sys.exit(1)
 
     # 1. Load Data
@@ -92,7 +103,7 @@ def main():
         raw_tasks = json.load(f)
     
     # Only verify tasks that are actually in the benchmark config
-    with open("transmission_benchmark.json", "r") as f:
+    with open("pipeline_benchmark.json", "r") as f:
         bench_tasks = json.load(f)
         valid_ids = set(t["id"] for t in bench_tasks)
         

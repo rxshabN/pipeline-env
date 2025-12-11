@@ -56,8 +56,7 @@ class AgentPatchGrader(Grader):
             only_server=ONLY_SERVER,
         )
 
-        success, metadata = runner.run_grading()
-        score = 1.0 if success else 0.0
+        score, metadata = runner.run_grading()
 
         return (score, metadata)
 

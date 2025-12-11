@@ -5,49 +5,28 @@ import tempfile
 
 from .base import CLIResult, ToolError, ToolResult
 
-
-# =============================================================================
-# Anti-cheat: Block git commands that could reveal the fix
-# =============================================================================
-
-# These commands could allow the agent to see commit history or the golden fix
 BLOCKED_GIT_PATTERNS = [
-    # History viewing commands
-    r'\bgit\s+log\b',           # git log - shows commit history
-    r'\bgit\s+reflog\b',        # git reflog - shows reference log
-    r'\bgit\s+rev-list\b',      # git rev-list - lists commits
+    r'\bgit\s+log\b',           
+    r'\bgit\s+reflog\b',        
+    r'\bgit\s+rev-list\b',      
     
-    # Commit inspection commands
-    r'\bgit\s+show\s+[a-f0-9]', # git show <commit> - shows commit content
-    r'\bgit\s+cat-file\b',      # git cat-file - low-level object access
+    r'\bgit\s+show\s+[a-f0-9]', 
+    r'\bgit\s+cat-file\b',     
     
-    # Remote/fetch commands (shouldn't have remotes anyway, but block just in case)
     r'\bgit\s+fetch\b',
     r'\bgit\s+pull\b',
     r'\bgit\s+remote\b',
     
-    # Branch/checkout to other commits
-    r'\bgit\s+checkout\s+[a-f0-9]{7,}',  # git checkout <commit-hash>
-    r'\bgit\s+switch\s+[a-f0-9]{7,}',    # git switch <commit-hash>
+    r'\bgit\s+checkout\s+[a-f0-9]{7,}',  
+    r'\bgit\s+switch\s+[a-f0-9]{7,}',    
     
-    # Accessing .git directory directly
-    r'\.git/',                   # Any path containing .git/
-    r'/evaluation/',             # Block access to evaluation directory
-    r'/secure_git\b',            # Block access to secure git directory
+    r'\.git/',                   
+    r'/evaluation/',             
+    r'/secure_git\b',           
 ]
-
-# Commands that are ALLOWED (for agent's own work)
-# git diff, git status, git add, git commit, git stash - all fine
-# These help the agent track their own changes
 
 
 def is_blocked_command(command: str) -> tuple[bool, str]:
-    """
-    Check if a command should be blocked for anti-cheat reasons.
-    
-    Returns:
-        Tuple of (is_blocked, reason)
-    """
     command_lower = command.lower()
     
     for pattern in BLOCKED_GIT_PATTERNS:
@@ -119,9 +98,6 @@ class _BashSession:
                 f"timed out: bash has not returned in {self._timeout} seconds and must be restarted.",
             )
 
-        # =================================================================
-        # Anti-cheat: Check if command should be blocked
-        # =================================================================
         is_blocked, reason = is_blocked_command(command)
         if is_blocked:
             return CLIResult(
@@ -129,7 +105,6 @@ class _BashSession:
                 error=reason
             )
 
-        # we know these are not None because we created the process with PIPEs
         assert self._process.stdin
         assert self._process.stdout
         assert self._process.stderr
@@ -193,18 +168,6 @@ class _BashSession:
 
 
 class BashTool:
-    """
-    A tool that allows the agent to run bash commands.
-    
-    Anti-cheat measures:
-    - Git history commands (log, show, reflog) are blocked
-    - Access to /evaluation/ directory is blocked
-    - Agent runs as non-root user (uid 1000)
-    
-    Allowed git commands:
-    - git diff, git status, git add, git commit (for tracking own changes)
-    """
-
     _session: _BashSession | None
 
     def __init__(self):

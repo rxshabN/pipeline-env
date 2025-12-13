@@ -18,16 +18,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -62,16 +60,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -106,16 +102,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -150,16 +144,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -194,16 +186,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -238,16 +228,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -282,16 +270,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -326,16 +312,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -370,16 +354,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -414,16 +396,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -458,16 +438,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -502,16 +480,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -546,16 +522,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -590,16 +564,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -634,16 +606,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -678,16 +648,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -722,16 +690,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -766,16 +732,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -810,16 +774,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -854,16 +816,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -898,16 +858,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -942,16 +900,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -986,16 +942,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1030,16 +984,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1074,16 +1026,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1118,16 +1068,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1162,16 +1110,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1206,16 +1152,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1250,16 +1194,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1294,16 +1236,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1338,16 +1278,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1382,16 +1320,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1426,16 +1362,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1470,16 +1404,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1514,16 +1446,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1558,16 +1488,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1602,16 +1530,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1646,16 +1572,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1690,16 +1614,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1734,16 +1656,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1778,16 +1698,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1822,16 +1740,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1866,16 +1782,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1910,16 +1824,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1954,16 +1866,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -1998,16 +1908,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2042,16 +1950,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2086,16 +1992,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2130,16 +2034,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2174,16 +2076,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2218,16 +2118,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2262,16 +2160,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2306,16 +2202,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2350,16 +2244,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2394,16 +2286,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2438,16 +2328,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2482,16 +2370,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2526,16 +2412,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2570,16 +2454,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2614,16 +2496,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2658,16 +2538,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2702,16 +2580,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2746,16 +2622,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2790,16 +2664,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2834,16 +2706,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2878,16 +2748,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2922,16 +2790,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -2966,16 +2832,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3010,16 +2874,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3054,16 +2916,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3098,16 +2958,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3142,16 +3000,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3186,16 +3042,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3230,16 +3084,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3274,16 +3126,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3318,16 +3168,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3362,16 +3210,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3406,16 +3252,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3450,16 +3294,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3494,16 +3336,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3538,16 +3378,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3582,16 +3420,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3626,16 +3462,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3670,16 +3504,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3714,16 +3546,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3758,16 +3588,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3802,16 +3630,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3846,16 +3672,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3890,16 +3714,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3934,16 +3756,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -3978,16 +3798,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4022,16 +3840,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4066,16 +3882,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4110,16 +3924,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4154,16 +3966,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4198,16 +4008,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4242,16 +4050,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4286,16 +4092,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4330,16 +4134,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4374,16 +4176,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4418,16 +4218,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4462,16 +4260,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4506,16 +4302,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4550,16 +4344,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4594,16 +4386,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4638,16 +4428,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4682,16 +4470,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4726,16 +4512,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4770,16 +4554,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4814,16 +4596,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4858,16 +4638,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4902,16 +4680,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4946,16 +4722,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -4990,16 +4764,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -5034,16 +4806,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -5078,16 +4848,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -5122,16 +4890,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -5166,16 +4932,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -5210,16 +4974,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -5254,16 +5016,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],
@@ -5298,16 +5058,14 @@ Files to Modify:
 
 Instructions:
 1. Examine the source files in /home/ubuntu/repo/
-2. Read the tests (look for *_test.go files or the test/ directory) to understand expected behavior.
+2. Read the tests (look for *_test.go files) to understand expected behavior.
 3. Modify the source files to fix the bug.
-4. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).
-5. Call the `evaluate_tool()` grader (`grade_problem`) to test your changes and evaluate your score.
+4. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
+5. **ONE SHOT SUBMISSION:** You can only call `evaluate()` (`grade_problem`) **ONCE** at the very end. This is your final submission.
 
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
-- NO BUILD/TEST: Do NOT run go build, go test, or make. Code is built automatically on submission.
-- NO HELPER SCRIPTS: Do NOT create/run python or bash scripts to analyze code. This causes timeouts.
-- NO MASSIVE OUTPUT: Do NOT print 100+ lines. Use `head` to limit output.
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
+- **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
     """,
     hints=[],

@@ -237,6 +237,10 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- In idiomatic Go, error strings are often embedded within other error messages (wrapped errors). Think about how strict punctuation or capitalization in the inner error might disrupt the flow of the final concatenated message.
+- The objective is to align the codebase with standard Go linter rules regarding error message composition, ensuring that logs remain grammatically consistent when errors are chained.
+
     """,
     hints=[],
     difficulty="hard",
@@ -278,6 +282,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- Go 1.13 introduced native support for error wrapping, making the external `golang.org/x/xerrors` library obsolete. You need to replace all `xerrors` imports with the standard library's `errors` and `fmt` packages.
+- Systematically replace usages: `xerrors.New` becomes `errors.New`, and `xerrors.Errorf` becomes `fmt.Errorf`. The `%w` verb for wrapping errors is supported by `fmt.Errorf` in the standard library.
+- Watch out for import shadowing! Many Kubernetes-related files import `k8s.io/apimachinery/pkg/api/errors` as `errors`. To use the standard library `errors` package in the same file, you will need to alias the Kubernetes import (e.g., to `kerrors`).
 
     """,
     hints=[],
@@ -321,6 +330,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- Currently, the `pullrequest` resource persists sub-components like comments and labels to disk, but it fails to expose the raw Pull Request object itself.
+- Modify the disk handling logic in `pkg/pullrequest` to serialize the full `scm.PullRequest` struct into a file (e.g., `pr.json`) at the root of the resource workspace.
+- While updating the file writing logic, check the permission modes being used. Ensure that generated files are standard read/write (e.g., 0644) and do not unintentionally have the executable bit set.
+
     """,
     hints=[],
     difficulty="hard",
@@ -363,6 +377,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- The `pullrequest-init` tool is currently hardcoded to use the GitHub driver. You need to refactor `cmd/pullrequest-init/main.go` and `pkg/pullrequest` to dynamically select the correct SCM driver (GitHub or GitLab) based on the repository URL.
+- GitLab handles comments and labels specifically under the "Pull Requests" (Merge Requests) API, whereas GitHub often conflates them with Issues. You must migrate the logic in `pkg/pullrequest` to use the `PullRequests` service interface instead of the `Issues` service for these operations.
+- The current status checking logic likely relies on `CombinedStatus`, which is a GitHub-specific concept. Refactor this to use the generic `Statuses` interface from `go-scm` so it works with GitLab as well.
+
     """,
     hints=[],
     difficulty="hard",
@@ -404,6 +423,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- The API currently supports two fields for defining the execution identity: a legacy field and one that matches the standard Kubernetes Pod specification. You need to complete the deprecation cycle by removing the legacy field from the API definitions.
+- Removing this field will cause compilation errors in the logic that constructs Pods and in the test builders. You must update these references to rely solely on the remaining, standard field.
+- Several example manifests in the repository still rely on the deprecated syntax. You will need to identify and migrate these files to use the new field to ensure they remain valid against the updated schema.
 
     """,
     hints=[],
@@ -531,6 +555,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- The field `ResourceRef` in `PipelineResourceBinding` is currently a struct value, preventing it from being nil. In `TaskRun`, references like `TaskRef` are pointers.
+- Change `ResourceRef` to be a pointer in the API struct definition to align with other reference fields and allow for better "nil" checking (distinguishing between "empty struct" and "not present").
+- This change will cause compilation errors wherever `ResourceRef` is accessed directly. You will need to update validation logic, tests, and reconcilers to handle the pointer dereference safely.
+
     """,
     hints=[],
     difficulty="hard",
@@ -572,6 +601,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- Currently, `PipelineRun` and `TaskRun` use slightly different structs to bind resources (specifically `PipelineResourceBinding` vs `TaskResourceBinding`), leading to duplicated logic when resolving whether to use a reference or an embedded spec.
+- Embed the common `PipelineResourceBinding` struct inside `TaskResourceBinding` (via composition) instead of redefining the fields manually. This allows both types to share the same resolution methods.
+- Refactor the resource resolution logic in `pkg/reconciler` to accept the unified binding interface, reducing code duplication between the pipeline and task reconcilers.
 
     """,
     hints=[],
@@ -615,6 +649,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- A newly added linter is enforcing strict consistency on the license headers at the top of every file.
+- Review the first few lines of the Go files; there is likely a small discrepancy (such as trailing punctuation) in the copyright line compared to the expected standard.
+- Since this affects a large number of files, consider using a bulk search-and-replace to standardize the header string.
+
     """,
     hints=[],
     difficulty="hard",
@@ -656,6 +695,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- Currently, `Param` values are strictly strings. You need to introduce a mechanism (likely a custom type similar to Kubernetes' `IntOrString`) that allows a parameter value to be either a `string` or an `[]string`.
+- This change impacts validation logic significantly. You must enforce that array parameters are *only* used in fields that support list replacement (like `args` or `command`), and reject their use in string-only fields (like `image`).
+- The templating engine needs to be updated to handle these new array replacements. Instead of simple string substitution, it should be able to expand a single parameter token (e.g., `$(params.my-array)`) into multiple elements within a command argument list.
 
     """,
     hints=[],
@@ -699,6 +743,10 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- This task requires reordering imports to comply with standard Go formatting conventions (alphabetical order, grouping standard library vs. third-party).
+- Instead of manually sorting dozens of files, consider using standard Go tooling like `goimports` or `gofmt` to automatically detect and fix the ordering issues across the codebase.
+
     """,
     hints=[],
     difficulty="hard",
@@ -740,6 +788,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- You need to update the version of `knative/pkg` in `Gopkg.toml` and then execute the dependency manager (likely `dep ensure` if available, or manually updating `Gopkg.lock` and `vendor/` if not).
+- The updated `knative/pkg` library introduces breaking changes to the controller and webhook startup logic. You will need to adapt `cmd/controller/main.go` and `cmd/webhook/main.go` to match the new function signatures.
+- There are also changes in how metrics and logging are configured. Check the compilation errors in `pkg/logging` and the reconcilers to identify where the old APIs (like `metrics.Exporter`) have been refactored or moved.
 
     """,
     hints=[],
@@ -783,6 +836,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HITNS:
+- This task addresses technical debt identified by static analysis tools. Focus on removing unused variables and constants (dead code) that are declared but never referenced in the package.
+- Review the code for idiomatic Go issues such as unhandled errors, redundant type assertions, or unnecessary assignments that have no effect.
+- Some fixes may involve cleaning up import shadows or correcting malformed comments to satisfy linter strictness.
+
     """,
     hints=[],
     difficulty="hard",
@@ -824,6 +882,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- This task involves porting integration tests from `knative/build`. The core work is translating the build specifications into `TaskRun` definitions in the `examples/` directory.
+- Simply adding YAML files isn't enough; you must ensure the test harness (scripts in `test/`) is updated to explicitly include and execute these new definitions.
+- If the ported tests fail due to authentication or volume mounting issues, investigate the `pkg/credentials` logic to ensure it supports the configurations defined in the new test cases.
 
     """,
     hints=[],
@@ -867,6 +930,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- The current naming logic creates deterministic names based on inputs, which leads to collisions when multiple runs happen quickly or concurrently.
+- Introduce a helper function in `pkg/names` that appends a short, random alphanumeric suffix (e.g., 5 characters) to a base string, ensuring the total length stays within Kubernetes limits (63 chars).
+- Update the resource generation logic (for Pods, Steps, and TaskRuns) to use this new randomization helper instead of simple string concatenation.
+
     """,
     hints=[],
     difficulty="hard",
@@ -908,6 +976,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- This task requires implementing a new storage backend for artifact passing. Currently, artifacts move via PVCs; you need to add support for GCS buckets as an alternative.
+- The configuration for this bucket should be driven by a `ConfigMap` (e.g., `config-artifact-bucket`). You'll need to parse this config in the reconciler.
+- Introduce a new interface or refactor the existing `ArtifactStorage` logic so that it can polymorphically handle both PVCs and Buckets. The Bucket implementation will likely need to inject specific container steps (using tools like `gsutil`) to upload/download files at runtime.
 
     """,
     hints=[],
@@ -951,6 +1024,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- The implementation requires changes in two main areas: defining the `timeout` field in the API specifications (likely using the standard Kubernetes duration type) and enforcing this limit within the respective reconcilers.
+- When the timeout is exceeded, the reconciler should update the object's Condition to indicate a 'TimedOut' state and stop further execution logic.
+- Ensure you add validation for the new duration field to prevent invalid time strings from reaching the controller.
+
     """,
     hints=[],
     difficulty="hard",
@@ -992,6 +1070,12 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- Currently, `TaskResourceBinding` (used in `TaskRun` inputs/outputs) only allows pointing to an existing `PipelineResource` via a reference name. You need to extend this struct in `pkg/apis/pipeline/v1alpha1/resource_types.go` to optionally accept a full `PipelineResourceSpec` inline.
+- Update the validation logic in `pkg/apis/pipeline/v1alpha1/taskrun_validation.go` to enforce that a binding provides *either* a reference *or* a resource spec, but not both (and not neither).
+- 
+- The core of this task involves refactoring the resource resolution logic in `pkg/reconciler/v1alpha1/taskrun/resources/taskresourceresolution.go`. Instead of always looking up a resource by name from the lister, the resolver should now check if the `ResourceSpec` is embedded in the `TaskRun` itself. If it is, use that definition directly; otherwise, proceed with the existing name-based lookup.
 
     """,
     hints=[],
@@ -1035,6 +1119,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- This is primarily a renaming refactor to improve API clarity. The field `ProvidedBy` in the pipeline resource definition is being replaced with `From`.
+- You need to update the Go struct definition for `PipelineTaskInputResource` to reflect this new JSON tag and field name.
+- This change ripples through the validation logic (ensuring the 'from' task exists) and the DAG construction (linking tasks based on the new field). Be sure to update all references in the reconciler and tests.
+
     """,
     hints=[],
     difficulty="hard",
@@ -1076,6 +1165,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- Consider how a Pipeline communicates its overall requirements to the outside world. Currently, requirements are hidden inside individual tasks; finding a way to declare them at the top level would simplify binding.
+- The current task definition combines all resource usages into a single list. Think about how the API could better reflect the direction of data flow (consumption vs. production) for each resource.
+- When resources are declared abstractly, the mechanism for linking tasks (the DAG) needs to change from direct dependency to a model where tasks reference these abstract declarations.
 
     """,
     hints=[],
@@ -1119,6 +1213,10 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- To control the execution environment for GCS operations, the build configuration (`.ko.yaml`) must explicitly map the `gsutil` command to a specific base image containing the necessary SDK.
+- In the GCS resource definition, replace the hardcoded Docker image reference with the specific Go package path for the `gsutil` command. This allows the build system/controller to inject the configured image rather than relying on a static string.
+
     """,
     hints=[],
     difficulty="hard",
@@ -1161,6 +1259,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- This task involves decoupling the pipeline controller from the `knative/build` controller. Instead of creating `Build` objects, the reconciler should create and watch Kubernetes `Pod`s directly.
+- You will need to implement the Pod creation logic yourself (likely forked from the build controller logic) in `pkg/reconciler/v1alpha1/taskrun/resources/pod.go`.
+- This change requires vendoring and initializing the necessary helper commands (like `git-init` and `creds-init`) directly within this repository, as they will no longer be provided by the external build controller.
+
     """,
     hints=[],
     difficulty="hard",
@@ -1202,6 +1305,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- This task requires adding a new `ClusterTask` type that functions similarly to `Task` but at the cluster scope (no namespace).
+- You must introduce a common interface (e.g., `TaskInterface`) that both `Task` and `ClusterTask` satisfy, allowing the Reconciler to handle both types polymorphically.
+- Update `TaskRef` to include a `Kind` field, enabling users to specify whether they are referencing a namespaced `Task` or a cluster-wide `ClusterTask`.
 
     """,
     hints=[],
@@ -1287,6 +1395,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- This task requires implementing the logic to pass artifacts (like a Git repo state) from one task to another within a Pipeline.
+- Consider how the system knows *where* an input comes from. You will likely need to extend `TaskResourceBinding` with a new field (e.g., `Paths`) to specify the locations on disk where resources should be copied from or to. 
+- The `PipelineRun` controller needs to facilitate this transfer. It should create a shared PersistentVolumeClaim (PVC) that acts as a "scratch space" for the pipeline's duration, allowing tasks to write outputs that subsequent tasks can read as inputs.
+
     """,
     hints=[],
     difficulty="hard",
@@ -1328,6 +1441,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- The `Version` field in resource bindings was intended for overriding or versioning artifacts between tasks, but this approach has been deprecated in favor of explicit resource definitions and PVC-based artifacts.
+- You need to purge this field from the `TaskRun` API definition. This involves modifying the Go structs that define inputs and outputs for TaskRuns in `pkg/apis/pipeline/v1alpha1`.
+- Once the API field is removed, the Go compiler will identify the breakages in the reconciliation logic (where resources are applied) and validation tests. You will need to remove the logic that attempts to read or use this specific field.
 
     """,
     hints=[],
@@ -1371,6 +1489,12 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- The goal is to move the responsibility of "binding" a Task to a specific Resource from the `Pipeline` definition to the `PipelineRun` execution. 
+- Modify `PipelineTask` (in `pipeline_types.go`) to remove fields that point to specific resource instances. The Pipeline should only define the *structure* of data flow (e.g., `providedBy` constraints), not the data sources themselves.
+- Update `PipelineRunSpec` (in `pipelinerun_types.go`) to accept a list of `PipelineResourceBinding`. This is where the user will now map the abstract names used in the Pipeline to concrete `PipelineResource` objects.
+- The Reconciler logic must be updated to resolve these bindings. Instead of reading them from the Pipeline spec, it should look up the resources provided in the PipelineRun spec and pass those specific bindings down when creating the underlying TaskRuns.
+
     """,
     hints=[],
     difficulty="hard",
@@ -1412,6 +1536,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- Modify the `TaskParam` struct in `pkg/apis/pipeline/v1alpha1/task_types.go` to include `Description` (string) and `Default` (string) fields.
+- Update the `TaskRun` validation and application logic (`pkg/reconciler/v1alpha1/taskrun/resources/apply.go` and `taskrun_validation.go`) to handle these new fields. Specifically, if a parameter value is not provided in the `TaskRun`, the system should use the `Default` value from the `Task` definition instead of erroring.
+- There is a secondary bug in `pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go` that you must fix. The `AddInputResources` function currently assumes that if *any* inputs are defined, a `git` resource *must* be present. You need to relax this check so that Tasks can define parameters without requiring a Git resource.
 
     """,
     hints=[],
@@ -1455,6 +1584,11 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- The Kaniko integration test currently checks if the task runs, but not if the image is actually accessible in the registry afterwards.
+- You will need to import `github.com/google/go-containerregistry` packages to programmatically verify the existence of the remote image digest.
+- Review how authentication is handled in the test setup; you may need to inject a specific secret configuration file (e.g., via a new environment variable) to allow the test to authenticate with the registry during execution.
+
     """,
     hints=[],
     difficulty="hard",
@@ -1496,6 +1630,11 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- There is redundancy between the `examples/` and `samples/` directories. You need to consolidate these by moving any unique functionality from `samples/` into `examples/` and deleting the `samples/` directory entirely.
+- The API definition for `PassedConstraints` (plural vs singular) is inconsistent across the codebase and docs. Ensure the struct field tag matches the plural usage seen in the updated examples.
+- Update the end-to-end test script (`test/e2e-tests.sh`) to explicitly apply the YAML files in `examples/`. This ensures that all example manifests remain valid against the current API schema during CI runs.
 
     """,
     hints=[],
@@ -1539,6 +1678,14 @@ CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
 
+HINTS:
+- This implementation relies on **delegation**: the `TaskRun` controller does not execute pods directly yet. Instead, it translates the `TaskRun` spec into a `knative/build` **Build** object and lets the Build controller handle execution.
+- In `pkg/reconciler/v1alpha1/taskrun/taskrun.go`, your reconcile loop should:
+    1. Check if a `Build` object already exists for this `TaskRun`.
+    2. If not, create a new `Build` using the steps defined in the `Task` spec.
+    3. If it does exist, copy the `Build`'s status (conditions, start time, completion time) back to the `TaskRun`'s status to keep them in sync.
+- You will need to update `cmd/controller/main.go` to initialize the `Build` informer and pass the build clientset to the TaskRun controller so it can perform these CRUD operations.
+
     """,
     hints=[],
     difficulty="hard",
@@ -1580,6 +1727,15 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+
+HINTS:
+- You need to scaffold a new `test/` directory to hold integration tests. This involves pulling in substantial upstream testing utilities from `knative/pkg/test`. Expect significant updates to the dependency lockfile to support these new libraries (including `opencensus`).
+- The test suite requires a lifecycle manager to handle global initialization (like parsing flags for kubeconfig) and cleanup. Implement a `TestMain` function in `test/init_test.go`
+ 
+[Image of software test lifecycle]
+ to orchestrate the environment setup before any individual tests run.
+- To ensure test isolation and reproducibility, the harness should not run against the default namespace. Instead, implement logic to generate a randomized namespace name for each test run and ensure it is torn down when execution completes.
+- The initial test case (`test/pipeline_test.go`) doesn't need to check complex logic yet. It serves as a "smoke test" to verify the harness itself. A simple check that instantiates a client and successfully lists `Pipeline` resources (even if the list is empty) is sufficient.
 
     """,
     hints=[],

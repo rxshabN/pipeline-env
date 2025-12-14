@@ -1,0 +1,812 @@
+[
+  {
+    "prompt": "## Task: tekton-0fa0994\n\n### Bug Description\nFix golint error strings.\n\n### Files to Modify\nThe following files need to be fixed:\n- cmd/entrypoint/waiter.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha2/resource_types.go\n- pkg/credentials/dockercreds/creds.go\n- pkg/credentials/gitcreds/basic.go\n- pkg/credentials/gitcreds/ssh.go\n- pkg/git/git.go\n- pkg/list/diff.go\n- pkg/pod/entrypoint.go\n- pkg/pod/entrypoint_lookup.go\n- pkg/pod/entrypoint_lookup_impl.go\n- pkg/reconciler/pipeline/dag/dag.go\n- pkg/reconciler/pipelinerun/cancel.go\n- pkg/reconciler/pipelinerun/pipelinerun.go\n- pkg/reconciler/pipelinerun/resources/conditionresolution.go\n- pkg/reconciler/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/pipelinerun/resources/pipelinespec.go\n- pkg/reconciler/taskrun/resources/cloudevent/cloudevent.go\n- pkg/reconciler/taskrun/resources/cloudevent/cloudevent_test.go\n- pkg/reconciler/taskrun/resources/image_exporter.go\n- pkg/reconciler/taskrun/resources/input_resources.go\n- pkg/reconciler/taskrun/resources/taskspec.go\n- pkg/reconciler/taskrun/taskrun.go\n- pkg/reconciler/taskrun/validate_resources.go\n- test/helm_task_test.go\n- test/pipelinerun_test.go\n- test/wait.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-0fa0994"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-0fa0994"
+      }
+    },
+    "id": "tekton-0fa0994"
+  },
+  {
+    "prompt": "## Task: tekton-9c9317a\n\n### Bug Description\nRemove imports of golang.org/x/xerrors\n\n### Files to Modify\nThe following files need to be fixed:\n- Gopkg.lock\n- cmd/entrypoint/waiter.go\n- pkg/apis/pipeline/v1alpha1/build_gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/cluster_resource.go\n- pkg/apis/pipeline/v1alpha1/gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/git_resource.go\n- pkg/apis/pipeline/v1alpha1/image_resource.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/storage_resource.go\n- pkg/apis/pipeline/v1alpha2/resource_types.go\n- pkg/artifacts/artifacts_storage.go\n- pkg/credentials/dockercreds/creds.go\n- pkg/credentials/gitcreds/basic.go\n- pkg/credentials/gitcreds/ssh.go\n- pkg/entrypoint/entrypointer_test.go\n- pkg/git/git.go\n- pkg/list/diff.go\n- pkg/pullrequest/api.go\n- pkg/reconciler/pipeline/dag/dag.go\n- pkg/reconciler/pipelinerun/cancel.go\n- pkg/reconciler/pipelinerun/pipelinerun.go\n- pkg/reconciler/pipelinerun/resources/conditionresolution.go\n- pkg/reconciler/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/pipelinerun/resources/pipelinespec.go\n- pkg/reconciler/pipelinerun/resources/pipelinespec_test.go\n- pkg/reconciler/pipelinerun/resources/validate_params.go\n- pkg/reconciler/taskrun/resources/image_exporter.go\n- pkg/reconciler/taskrun/resources/input_resources.go\n- pkg/reconciler/taskrun/resources/output_resource.go\n- pkg/reconciler/taskrun/resources/taskresourceresolution.go\n- pkg/reconciler/taskrun/resources/taskresourceresolution_test.go\n- pkg/reconciler/taskrun/resources/taskspec.go\n- pkg/reconciler/taskrun/resources/taskspec_test.go\n- pkg/reconciler/taskrun/taskrun.go\n- pkg/reconciler/taskrun/taskrun_test.go\n- pkg/reconciler/taskrun/validate_resources.go\n- pkg/reconciler/timeout_handler_test.go\n- test/cancel_test.go\n- test/helm_task_test.go\n- test/init_test.go\n- test/ko_test.go\n- test/secret.go\n- test/timeout_test.go\n- test/wait.go\n- third_party/VENDOR-LICENSE\n- vendor/golang.org/x/xerrors/LICENSE\n- vendor/golang.org/x/xerrors/PATENTS\n- vendor/golang.org/x/xerrors/adaptor.go\n- vendor/golang.org/x/xerrors/doc.go\n- vendor/golang.org/x/xerrors/errors.go\n- vendor/golang.org/x/xerrors/fmt.go\n- vendor/golang.org/x/xerrors/format.go\n- vendor/golang.org/x/xerrors/frame.go\n- vendor/golang.org/x/xerrors/internal/internal.go\n- vendor/golang.org/x/xerrors/wrap.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-9c9317a"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-9c9317a"
+      }
+    },
+    "id": "tekton-9c9317a"
+  },
+  {
+    "prompt": "## Task: tekton-6620822\n\n### Bug Description\nAdd read-only copy of pull request object in resource output.\n\n### Files to Modify\nThe following files need to be fixed:\n- cmd/pullrequest-init/example/base.json\n- cmd/pullrequest-init/example/comments/505233618.json\n- cmd/pullrequest-init/example/comments/505476017.json\n- cmd/pullrequest-init/example/comments/505482755.json\n- cmd/pullrequest-init/example/comments/505529049.json\n- cmd/pullrequest-init/example/comments/505616303.json\n- cmd/pullrequest-init/example/comments/505676294.json\n- cmd/pullrequest-init/example/comments/505798994.json\n- cmd/pullrequest-init/example/comments/505890656.json\n- cmd/pullrequest-init/example/comments/505923534.json\n- cmd/pullrequest-init/example/comments/506032472.json\n- cmd/pullrequest-init/example/comments/506082430.json\n- cmd/pullrequest-init/example/comments/506082465.json\n- cmd/pullrequest-init/example/comments/507732301.json\n- cmd/pullrequest-init/example/comments/507763725.json\n- cmd/pullrequest-init/example/comments/508007084.json\n- cmd/pullrequest-init/example/head.json\n- cmd/pullrequest-init/example/labels/approved\n- cmd/pullrequest-init/example/labels/cla%3A+yes\n- cmd/pullrequest-init/example/labels/lgtm\n- cmd/pullrequest-init/example/labels/size%2FL\n- cmd/pullrequest-init/example/pr.json\n- cmd/pullrequest-init/example/status/cla%2Fgoogle.json\n- cmd/pullrequest-init/example/status/pull-tekton-pipeline-build-tests.json\n- cmd/pullrequest-init/example/status/pull-tekton-pipeline-go-coverage.json\n- cmd/pullrequest-init/example/status/pull-tekton-pipeline-integration-tests.json\n- cmd/pullrequest-init/example/status/pull-tekton-pipeline-unit-tests.json\n- cmd/pullrequest-init/example/status/tide.json\n- docs/resources.md\n- pkg/pullrequest/disk.go\n- pkg/pullrequest/disk_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-6620822"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-6620822"
+      }
+    },
+    "id": "tekton-6620822"
+  },
+  {
+    "prompt": "## Task: tekton-d478e7d\n\n### Bug Description\nAdd gitlab support to the PR resource.\n\n### Files to Modify\nThe following files need to be fixed:\n- Gopkg.lock\n- cmd/pullrequest-init/github.go\n- cmd/pullrequest-init/github_test.go\n- cmd/pullrequest-init/main.go\n- docs/resources.md\n- pkg/apis/pipeline/v1alpha1/pull_request_resource.go\n- pkg/apis/pipeline/v1alpha1/pull_request_resource_test.go\n- pkg/pullrequest/api.go\n- pkg/pullrequest/api_test.go\n- pkg/pullrequest/disk.go\n- pkg/pullrequest/disk_test.go\n- pkg/pullrequest/scm.go\n- pkg/pullrequest/scm_test.go\n- vendor/github.com/jenkins-x/go-scm/scm/const.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/fake/data.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/fake/pr.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/github/webhook.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/content.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/git.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/gitlab.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/issue.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/org.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/pr.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/repo.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/review.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/user.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/util.go\n- vendor/github.com/jenkins-x/go-scm/scm/driver/gitlab/webhook.go\n- vendor/github.com/jenkins-x/go-scm/scm/pr.go\n- vendor/github.com/jenkins-x/go-scm/scm/webhook.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-d478e7d"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-d478e7d"
+      }
+    },
+    "id": "tekton-d478e7d"
+  },
+  {
+    "prompt": "## Task: tekton-f3456cc\n\n### Bug Description\nRemove deprecated serviceAccount field from *Run \u00f0\u0178\u0152\u00b3\n\n### Files to Modify\nThe following files need to be fixed:\n- examples/pipelineruns/clustertask-pipelinerun.yaml\n- examples/pipelineruns/conditional-pipelinerun.yaml\n- examples/pipelineruns/output-pipelinerun.yaml\n- examples/pipelineruns/pipelinerun-with-resourcespec.yaml\n- examples/pipelineruns/pipelinerun.yaml\n- examples/taskruns/docker-creds.yaml\n- examples/taskruns/git-ssh-creds.yaml\n- examples/taskruns/pull-private-image.yaml\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/taskrun/resources/pod.go\n- pkg/reconciler/taskrun/resources/pod_test.go\n- pkg/reconciler/taskrun/taskrun_test.go\n- test/builder/pipeline.go\n- test/builder/task.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-f3456cc"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-f3456cc"
+      }
+    },
+    "id": "tekton-f3456cc"
+  },
+  {
+    "prompt": "## Task: tekton-49de48b\n\n### Bug Description\nMake ResourceRef in PipelineResourceBinding consistent with TaskRun\n\n### Files to Modify\nThe following files need to be fixed:\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/pipelinerun/resources/conditionresolution.go\n- pkg/reconciler/pipelinerun/resources/input_output_steps.go\n- pkg/reconciler/pipelinerun/resources/input_output_steps_test.go\n- pkg/reconciler/taskrun/resources/image_exporter_test.go\n- pkg/reconciler/taskrun/resources/input_resource_test.go\n- pkg/reconciler/taskrun/resources/output_resource_test.go\n- pkg/reconciler/taskrun/resources/taskresourceresolution.go\n- pkg/reconciler/taskrun/resources/taskresourceresolution_test.go\n- pkg/reconciler/taskrun/taskrun_test.go\n- test/builder/pipeline.go\n- test/builder/pipeline_test.go\n- test/builder/task.go\n- test/builder/task_test.go\n- third_party/VENDOR-LICENSE\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-49de48b"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-49de48b"
+      }
+    },
+    "id": "tekton-49de48b"
+  },
+  {
+    "prompt": "## Task: tekton-73ba02b\n\n### Bug Description\nUse the same logic to resolve spec vs ref in Pipelines + Tasks\n\n### Files to Modify\nThe following files need to be fixed:\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/pipelinerun/resources/conditionresolution.go\n- pkg/reconciler/pipelinerun/resources/conditionresolution_test.go\n- pkg/reconciler/pipelinerun/resources/input_output_steps.go\n- pkg/reconciler/pipelinerun/resources/input_output_steps_test.go\n- pkg/reconciler/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/taskrun/resources/image_exporter.go\n- pkg/reconciler/taskrun/resources/image_exporter_test.go\n- pkg/reconciler/taskrun/resources/input_resource_test.go\n- pkg/reconciler/taskrun/resources/output_resource_test.go\n- pkg/reconciler/taskrun/resources/pod_test.go\n- pkg/reconciler/taskrun/resources/taskresourceresolution.go\n- pkg/reconciler/taskrun/resources/taskresourceresolution_test.go\n- test/builder/task.go\n- test/builder/task_test.go\n- test/cluster_resource_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-73ba02b"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-73ba02b"
+      }
+    },
+    "id": "tekton-73ba02b"
+  },
+  {
+    "prompt": "## Task: tekton-5fbe404\n\n### Bug Description\nFix copyright headers\n\n### Files to Modify\nThe following files need to be fixed:\n- cmd/entrypoint/main.go\n- cmd/entrypoint/main_test.go\n- cmd/pullrequest-init/fake_github.go\n- cmd/pullrequest-init/fake_github_test.go\n- cmd/pullrequest-init/github.go\n- cmd/pullrequest-init/github_test.go\n- cmd/pullrequest-init/types.go\n- pkg/apis/config/default.go\n- pkg/apis/config/default_test.go\n- pkg/apis/config/store.go\n- pkg/apis/config/store_test.go\n- pkg/apis/pipeline/v1alpha1/artifact_bucket.go\n- pkg/apis/pipeline/v1alpha1/artifact_bucket_test.go\n- pkg/apis/pipeline/v1alpha1/artifact_pvc.go\n- pkg/apis/pipeline/v1alpha1/artifact_pvc_test.go\n- pkg/apis/pipeline/v1alpha1/build_gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/build_gcs_resource_test.go\n- pkg/apis/pipeline/v1alpha1/cluster_resource.go\n- pkg/apis/pipeline/v1alpha1/cluster_resource_test.go\n- pkg/apis/pipeline/v1alpha1/cluster_task_defaults.go\n- pkg/apis/pipeline/v1alpha1/cluster_task_types.go\n- pkg/apis/pipeline/v1alpha1/condition_defaults.go\n- pkg/apis/pipeline/v1alpha1/condition_types.go\n- pkg/apis/pipeline/v1alpha1/condition_validation_test.go\n- pkg/apis/pipeline/v1alpha1/doc.go\n- pkg/apis/pipeline/v1alpha1/gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/gcs_resource_test.go\n- pkg/apis/pipeline/v1alpha1/git_resource.go\n- pkg/apis/pipeline/v1alpha1/image_resource.go\n- pkg/apis/pipeline/v1alpha1/metadata_validation.go\n- pkg/apis/pipeline/v1alpha1/metadata_validation_test.go\n- pkg/apis/pipeline/v1alpha1/param_types.go\n- pkg/apis/pipeline/v1alpha1/pipeline_defaults.go\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_defaults.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/pod.go\n- pkg/apis/pipeline/v1alpha1/pod_test.go\n- pkg/apis/pipeline/v1alpha1/pull_request_resource.go\n- pkg/apis/pipeline/v1alpha1/resource_defaults.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/result_types.go\n- pkg/apis/pipeline/v1alpha1/secret_volume_mount.go\n- pkg/apis/pipeline/v1alpha1/storage_resource.go\n- pkg/apis/pipeline/v1alpha1/task_defaults.go\n- pkg/apis/pipeline/v1alpha1/task_interface.go\n- pkg/apis/pipeline/v1alpha1/task_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_defaults.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/types_test.go\n- pkg/artifacts/artifact_storage_test.go\n- pkg/artifacts/artifacts_storage.go\n- pkg/credentials/dockercreds/creds_test.go\n- pkg/credentials/gitcreds/creds_test.go\n- pkg/entrypoint/entrypointer.go\n- pkg/entrypoint/entrypointer_test.go\n- pkg/list/diff.go\n- pkg/list/diff_test.go\n- pkg/reconciler/event_test.go\n- pkg/reconciler/stats.go\n- pkg/reconciler/testing/configmap.go\n- pkg/reconciler/timeout_handler.go\n- pkg/reconciler/timeout_handler_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/config/store.go\n- pkg/reconciler/v1alpha1/pipelinerun/config/store_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/controller.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/taskrun/controller.go\n- pkg/reconciler/v1alpha1/taskrun/entrypoint/entrypoint_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/cloudevent/cloudevent_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/cloudevent/cloudeventsfakeclient.go\n- pkg/reconciler/v1alpha1/taskrun/resources/image_exporter.go\n- pkg/reconciler/v1alpha1/taskrun/resources/image_exporter_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskresourceresolution.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskresourceresolution_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskspec.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskspec_test.go\n- pkg/reconciler/v1alpha1/taskrun/sidecars/stop.go\n- pkg/reconciler/v1alpha1/taskrun/sidecars/stop_test.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- pkg/reconciler/v1alpha1/taskrun/validate_resources.go\n- pkg/status/taskrunpod.go\n- pkg/status/taskrunpod_test.go\n- pkg/status/taskrunreasons.go\n- pkg/system/names_test.go\n- test/adoc.go\n- test/artifact_bucket_test.go\n- test/builder/condition.go\n- test/builder/condition_test.go\n- test/builder/container.go\n- test/builder/doc.go\n- test/builder/examples_test.go\n- test/builder/owner_reference.go\n- test/builder/pipeline.go\n- test/builder/pipeline_test.go\n- test/builder/pod.go\n- test/builder/pod_test.go\n- test/builder/task.go\n- test/builder/task_test.go\n- test/cancel_test.go\n- test/clients.go\n- test/cluster_resource_test.go\n- test/controller.go\n- test/dag_test.go\n- test/duplicate_test.go\n- test/embed_test.go\n- test/entrypoint_test.go\n- test/gcs_taskrun_test.go\n- test/git_checkout_test.go\n- test/gohelloworld/main.go\n- test/helm_task_test.go\n- test/init_test.go\n- test/kaniko_task_test.go\n- test/logs/color/color.go\n- test/logs/main.go\n- test/logs/pipelinerun/logs.go\n- test/logs/pod/watcher.go\n- test/logs/taskrun/logs.go\n- test/names/generate.go\n- test/secret.go\n- test/status_test.go\n- test/wait.go\n- test/wait_example_test.go\n- test/wait_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-5fbe404"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-5fbe404"
+      }
+    },
+    "id": "tekton-5fbe404"
+  },
+  {
+    "prompt": "## Task: tekton-86deacb\n\n### Bug Description\nExpand parameters to support the Array type.\n\n### Files to Modify\nThe following files need to be fixed:\n- pkg/apis/pipeline/v1alpha1/param_types.go\n- pkg/apis/pipeline/v1alpha1/param_types_test.go\n- pkg/apis/pipeline/v1alpha1/pipeline_defaults.go\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation_test.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/task_defaults.go\n- pkg/apis/pipeline/v1alpha1/task_validation.go\n- pkg/apis/pipeline/v1alpha1/task_validation_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/apply.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/validate_params.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/validate_params_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- pkg/reconciler/v1alpha1/taskrun/validate_resources.go\n- pkg/reconciler/v1alpha1/taskrun/validate_resources_test.go\n- pkg/templating/templating.go\n- pkg/templating/templating_test.go\n- test/builder/examples_test.go\n- test/builder/param.go\n- test/builder/param_test.go\n- test/builder/pipeline.go\n- test/builder/pipeline_test.go\n- test/builder/task.go\n- test/builder/task_test.go\n- test/dag_test.go\n- test/helm_task_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-86deacb"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-86deacb"
+      }
+    },
+    "id": "tekton-86deacb"
+  },
+  {
+    "prompt": "## Task: tekton-42bc3fb\n\n### Bug Description\nFix gofmt on imports ordering\n\n### Files to Modify\nThe following files need to be fixed:\n- cmd/creds-init/main.go\n- cmd/git-init/main.go\n- pkg/apis/config/store_test.go\n- pkg/apis/pipeline/v1alpha1/cluster_task_types.go\n- pkg/apis/pipeline/v1alpha1/condition_types.go\n- pkg/apis/pipeline/v1alpha1/condition_validation.go\n- pkg/apis/pipeline/v1alpha1/condition_validation_test.go\n- pkg/apis/pipeline/v1alpha1/metadata_validation.go\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/pipelineresource_validation.go\n- pkg/apis/pipeline/v1alpha1/pipelineresource_validation_test.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types_test.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_validation.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/result_types_test.go\n- pkg/apis/pipeline/v1alpha1/task_types.go\n- pkg/apis/pipeline/v1alpha1/task_validation.go\n- pkg/apis/pipeline/v1alpha1/task_validation_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/types_test.go\n- pkg/artifacts/artifact_storage_test.go\n- pkg/reconciler/event.go\n- pkg/reconciler/event_test.go\n- pkg/reconciler/reconciler_test.go\n- pkg/reconciler/stats.go\n- pkg/reconciler/timeout_handler_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/cancel.go\n- pkg/reconciler/v1alpha1/pipelinerun/cancel_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/config/store.go\n- pkg/reconciler/v1alpha1/pipelinerun/config/store_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/controller.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/v1alpha1/taskrun/cancel.go\n- pkg/reconciler/v1alpha1/taskrun/cancel_test.go\n- pkg/reconciler/v1alpha1/taskrun/controller.go\n- pkg/reconciler/v1alpha1/taskrun/resources/image_exporter_test.go\n- pkg/reconciler/v1alpha1/taskrun/timeout_check_test.go\n- pkg/status/taskrunpod.go\n- pkg/status/taskrunpod_test.go\n- test/artifact_bucket_test.go\n- test/build_logs.go\n- test/builder/pipeline.go\n- test/builder/pipeline_test.go\n- test/builder/task.go\n- test/builder/task_test.go\n- test/clients.go\n- test/cluster_resource_test.go\n- test/controller.go\n- test/dag_test.go\n- test/duplicate_test.go\n- test/embed_test.go\n- test/gcs_taskrun_test.go\n- test/git_checkout_test.go\n- test/helm_task_test.go\n- test/init_test.go\n- test/kaniko_task_test.go\n- test/pipelinerun_test.go\n- test/secret.go\n- test/taskrun_test.go\n- test/timeout_test.go\n- test/wait.go\n- test/wait_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-42bc3fb"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-42bc3fb"
+      }
+    },
+    "id": "tekton-42bc3fb"
+  },
+  {
+    "prompt": "## Task: tekton-a23b508\n\n### Bug Description\nBump the version of knative/pkg to something much more recent.\n\n### Files to Modify\nThe following files need to be fixed:\n- Gopkg.lock\n- Gopkg.toml\n- cmd/controller/main.go\n- cmd/webhook/main.go\n- pkg/logging/config.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- third_party/VENDOR-LICENSE\n- vendor/contrib.go.opencensus.io/exporter/stackdriver/metrics.go\n- vendor/contrib.go.opencensus.io/exporter/stackdriver/stats.go\n- vendor/github.com/google/go-cmp/cmp/cmpopts/ignore.go\n- vendor/github.com/google/go-cmp/cmp/cmpopts/sort.go\n- vendor/github.com/google/go-cmp/cmp/cmpopts/sort_go17.go\n- vendor/github.com/google/go-cmp/cmp/cmpopts/sort_go18.go\n- vendor/github.com/google/go-cmp/cmp/cmpopts/xform.go\n- vendor/github.com/google/go-cmp/cmp/compare.go\n- vendor/github.com/google/go-cmp/cmp/export_panic.go\n- vendor/github.com/google/go-cmp/cmp/export_unsafe.go\n- vendor/github.com/google/go-cmp/cmp/internal/diff/debug_disable.go\n- vendor/github.com/google/go-cmp/cmp/internal/diff/debug_enable.go\n- vendor/github.com/google/go-cmp/cmp/internal/diff/diff.go\n- vendor/github.com/google/go-cmp/cmp/internal/flags/flags.go\n- vendor/github.com/google/go-cmp/cmp/internal/flags/toolchain_legacy.go\n- vendor/github.com/google/go-cmp/cmp/internal/flags/toolchain_recent.go\n- vendor/github.com/google/go-cmp/cmp/internal/function/func.go\n- vendor/github.com/google/go-cmp/cmp/internal/value/format.go\n- vendor/github.com/google/go-cmp/cmp/internal/value/pointer_purego.go\n- vendor/github.com/google/go-cmp/cmp/internal/value/pointer_unsafe.go\n- vendor/github.com/google/go-cmp/cmp/internal/value/sort.go\n- vendor/github.com/google/go-cmp/cmp/internal/value/zero.go\n- vendor/github.com/google/go-cmp/cmp/options.go\n- vendor/github.com/google/go-cmp/cmp/path.go\n- vendor/github.com/google/go-cmp/cmp/report.go\n- vendor/github.com/google/go-cmp/cmp/report_compare.go\n- vendor/github.com/google/go-cmp/cmp/report_reflect.go\n- vendor/github.com/google/go-cmp/cmp/report_slices.go\n- vendor/github.com/google/go-cmp/cmp/report_text.go\n- vendor/github.com/google/go-cmp/cmp/report_value.go\n- vendor/github.com/google/go-cmp/cmp/reporter.go\n- vendor/github.com/google/uuid/CONTRIBUTORS\n- vendor/github.com/google/uuid/LICENSE\n- vendor/github.com/google/uuid/dce.go\n- vendor/github.com/google/uuid/doc.go\n- vendor/github.com/google/uuid/hash.go\n- vendor/github.com/google/uuid/marshal.go\n- vendor/github.com/google/uuid/node.go\n- vendor/github.com/google/uuid/node_js.go\n- vendor/github.com/google/uuid/node_net.go\n- vendor/github.com/google/uuid/sql.go\n- vendor/github.com/google/uuid/time.go\n- vendor/github.com/google/uuid/util.go\n- vendor/github.com/google/uuid/uuid.go\n- vendor/github.com/google/uuid/version1.go\n- vendor/github.com/google/uuid/version4.go\n- vendor/github.com/knative/pkg/apis/contexts.go\n- vendor/github.com/knative/pkg/apis/deprecated.go\n- vendor/github.com/knative/pkg/apis/duck/typed.go\n- vendor/github.com/knative/pkg/apis/duck/v1beta1/addressable_types.go\n- vendor/github.com/knative/pkg/apis/duck/v1beta1/register.go\n- vendor/github.com/knative/pkg/apis/duck/v1beta1/zz_generated.deepcopy.go\n- vendor/github.com/knative/pkg/apis/field_error.go\n- vendor/github.com/knative/pkg/apis/istio/v1alpha3/virtualservice_types.go\n- vendor/github.com/knative/pkg/apis/istio/v1alpha3/zz_generated.deepcopy.go\n- vendor/github.com/knative/pkg/apis/url.go\n- vendor/github.com/knative/pkg/apis/zz_generated.deepcopy.go\n- vendor/github.com/knative/pkg/configmap/informed_watcher.go\n- vendor/github.com/knative/pkg/configmap/manual_watcher.go\n- vendor/github.com/knative/pkg/configmap/store.go\n- vendor/github.com/knative/pkg/configmap/watcher.go\n- vendor/github.com/knative/pkg/controller/controller.go\n- vendor/github.com/knative/pkg/controller/helper.go\n- vendor/github.com/knative/pkg/controller/stats_reporter.go\n- vendor/github.com/knative/pkg/kmp/diff.go\n- vendor/github.com/knative/pkg/kmp/reporters.go\n- vendor/github.com/knative/pkg/logging/config.go\n- vendor/github.com/knative/pkg/logging/logkey/constants.go\n- vendor/github.com/knative/pkg/metrics/config.go\n- vendor/github.com/knative/pkg/metrics/exporter.go\n- vendor/github.com/knative/pkg/signals/signal.go\n- vendor/github.com/knative/pkg/test/kube_checks.go\n- vendor/github.com/knative/pkg/test/spoof/spoof.go\n- vendor/github.com/knative/pkg/webhook/webhook.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-a23b508"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-a23b508"
+      }
+    },
+    "id": "tekton-a23b508"
+  },
+  {
+    "prompt": "## Task: tekton-6ecdf9d\n\n### Bug Description\nFix lots of lint errors.\n\n### Files to Modify\nThe following files need to be fixed:\n- pkg/apis/pipeline/v1alpha1/build_gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/dag.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/resource_defaults.go\n- pkg/apis/pipeline/v1alpha1/task_defaults.go\n- pkg/artifacts/artifacts_storage.go\n- pkg/reconciler/reconciler.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/taskrun/entrypoint/entrypoint.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource_test.go\n- test/builder/doc.go\n- test/logs/main.go\n- third_party/VENDOR-LICENSE\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-6ecdf9d"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-6ecdf9d"
+      }
+    },
+    "id": "tekton-6ecdf9d"
+  },
+  {
+    "prompt": "## Task: tekton-3255e31\n\n### Bug Description\nMigrate yaml e2e test from knative/build\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/tasks.md\n- examples/1-bots.yaml\n- examples/README.md\n- examples/build-task.yaml\n- examples/default-cluster-admin.yaml\n- examples/deploy-task.yaml\n- examples/output-pipeline.yaml\n- examples/output-tasks.yaml\n- examples/pipeline.yaml\n- examples/pipelineruns/output-pipelinerun.yaml\n- examples/pipelineruns/pipelinerun.yaml\n- examples/resources.yaml\n- examples/run/output-pipelinerun.yaml\n- examples/run/pipelinerun.yaml\n- examples/run/private-taskrun.yaml\n- examples/run/taskrun.yaml\n- examples/taskruns/gcs-resource-spec-taskrun.yaml\n- examples/taskruns/git-resource-spec-taskrun.yaml\n- examples/taskruns/private-taskrun.yaml\n- examples/taskruns/task-env.yaml\n- examples/taskruns/task-volume-args.yaml\n- examples/taskruns/task-volume.yaml\n- examples/taskruns/taskrun-cluster-task.yaml\n- examples/taskruns/taskrun-configmap.yaml\n- examples/taskruns/taskrun-custom-env.yaml\n- examples/taskruns/taskrun-custom-volume.yaml\n- examples/taskruns/taskrun-docker-basic.yaml\n- examples/taskruns/taskrun-git-source.yaml\n- examples/taskruns/taskrun-git-ssh.yaml\n- examples/taskruns/taskrun-git-volume.yaml\n- examples/taskruns/taskrun-home-volume.yaml\n- examples/taskruns/taskrun-home.yaml\n- examples/taskruns/taskrun-secret-env.yaml\n- examples/taskruns/taskrun-secret-volume.yaml\n- examples/taskruns/taskrun-targetpath-gotest.yaml\n- examples/taskruns/taskrun-unnamed-steps.yaml\n- examples/taskruns/taskrun-workindir.yaml\n- examples/taskruns/taskrun-workspace.yaml\n- examples/taskruns/taskrun.yaml\n- pkg/credentials/dockercreds/creds.go\n- pkg/credentials/gitcreds/creds.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pod_test.go\n- test/columns.txt\n- test/e2e-common.sh\n- test/pipelinerun_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-3255e31"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-3255e31"
+      }
+    },
+    "id": "tekton-3255e31"
+  },
+  {
+    "prompt": "## Task: tekton-7abd245\n\n### Bug Description\nappend random string to generated names\n\n### Files to Modify\nThe following files need to be fixed:\n- Gopkg.lock\n- pkg/apis/pipeline/v1alpha1/artifact_bucket.go\n- pkg/apis/pipeline/v1alpha1/artifact_bucket_test.go\n- pkg/apis/pipeline/v1alpha1/artifact_pvc.go\n- pkg/apis/pipeline/v1alpha1/artifact_pvc_test.go\n- pkg/apis/pipeline/v1alpha1/build_gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/build_gcs_resource_test.go\n- pkg/apis/pipeline/v1alpha1/cluster_resource.go\n- pkg/apis/pipeline/v1alpha1/cluster_resource_test.go\n- pkg/apis/pipeline/v1alpha1/gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/gcs_resource_test.go\n- pkg/apis/pipeline/v1alpha1/git_resource.go\n- pkg/names/generate.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pod.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pod_test.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/README.md\n- test/cancel_test.go\n- test/helm_task_test.go\n- test/init_test.go\n- test/names/generate.go\n- test/pipelinerun_test.go\n- test/randstring.go\n- test/timeout_test.go\n- vendor/k8s.io/apimachinery/pkg/util/rand/rand.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-7abd245"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-7abd245"
+      }
+    },
+    "id": "tekton-7abd245"
+  },
+  {
+    "prompt": "## Task: tekton-985ff2f\n\n### Bug Description\nsharing artifacts between pipeline tasks using bucket\n\n### Files to Modify\nThe following files need to be fixed:\n- config/config-artifact-bucket.yaml\n- docs/developers/README.md\n- docs/using.md\n- pkg/apis/pipeline/v1alpha1/artifact_bucket.go\n- pkg/apis/pipeline/v1alpha1/artifact_bucket_test.go\n- pkg/apis/pipeline/v1alpha1/artifact_pvc.go\n- pkg/apis/pipeline/v1alpha1/artifact_pvc_test.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/artifacts/artifact_storage_test.go\n- pkg/artifacts/artifacts_storage.go\n- pkg/reconciler/v1alpha1/pipelinerun/config/store.go\n- pkg/reconciler/v1alpha1/pipelinerun/config/store_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/config/testdata/config-artifact-bucket.yaml\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- test/README.md\n- test/artifact_bucket_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-985ff2f"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-985ff2f"
+      }
+    },
+    "id": "tekton-985ff2f"
+  },
+  {
+    "prompt": "## Task: tekton-23a2b91\n\n### Bug Description\nAdd Pipeline-level timeouts, implement Task-level timeouts\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/using.md\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation_test.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/builder/pipeline.go\n- test/builder/pipeline_test.go\n- test/builder/task.go\n- test/taskrun_test.go\n- test/timeout_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-23a2b91"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-23a2b91"
+      }
+    },
+    "id": "tekton-23a2b91"
+  },
+  {
+    "prompt": "## Task: tekton-f36dc79\n\n### Bug Description\nAllow taskrun to embed resource spec for inputs/output\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/using.md\n- examples/README.md\n- examples/run/task-run-resource-spec.yaml\n- pkg/apis/pipeline/v1alpha1/pipelineresource_validation.go\n- pkg/apis/pipeline/v1alpha1/pipelineresource_validation_test.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskresourceresolution.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskresourceresolution_test.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/builder/task.go\n- test/builder/task_test.go\n- test/cancel_test.go\n- test/crd.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-f36dc79"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-f36dc79"
+      }
+    },
+    "id": "tekton-f36dc79"
+  },
+  {
+    "prompt": "## Task: tekton-405702f\n\n### Bug Description\nRename `providedBy` to `from`\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/developers/README.md\n- docs/tutorial.md\n- docs/using.md\n- examples/README.md\n- examples/output-pipeline.yaml\n- examples/pipeline.yaml\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipeline/resources/dag.go\n- pkg/reconciler/v1alpha1/pipeline/resources/dag_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution_test.go\n- test/builder/pipeline.go\n- test/builder/pipeline_test.go\n- test/pipelinerun_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-405702f"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-405702f"
+      }
+    },
+    "id": "tekton-405702f"
+  },
+  {
+    "prompt": "## Task: tekton-01f1039\n\n### Bug Description\nImplement API which simiplifies resource binding\n\n### Files to Modify\nThe following files need to be fixed:\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation_test.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipeline/resources/dag.go\n- pkg/reconciler/v1alpha1/pipeline/resources/dag_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/providedby_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskresourceresolution.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/README.md\n- test/builder/README.md\n- test/builder/examples_test.go\n- test/builder/pipeline.go\n- test/builder/pipeline_test.go\n- test/builder/task.go\n- test/builder/task_test.go\n- test/gcs_taskrun_test.go\n- test/helm_task_test.go\n- test/kaniko_task_test.go\n- test/pipelinerun_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-01f1039"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-01f1039"
+      }
+    },
+    "id": "tekton-01f1039"
+  },
+  {
+    "prompt": "## Task: tekton-11594f8\n\n### Bug Description\nAdd support for overriding base image for gsutil\n\n### Files to Modify\nThe following files need to be fixed:\n- .ko.yaml\n- .ko.yaml.release\n- cmd/bash/main.go\n- cmd/controller/main.go\n- cmd/gsutil/kodata/LICENSE\n- cmd/gsutil/kodata/VENDOR-LICENSE\n- cmd/gsutil/main.go\n- config/controller.yaml\n- docs/using.md\n- pkg/apis/pipeline/v1alpha1/gcs_resource.go\n- pkg/apis/pipeline/v1alpha1/gcs_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource.go\n- pkg/reconciler/v1alpha1/taskrun/resources/output_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pre_post_build_step.go\n- pkg/reconciler/v1alpha1/taskrun/resources/volume.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-11594f8"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-11594f8"
+      }
+    },
+    "id": "tekton-11594f8"
+  },
+  {
+    "prompt": "## Task: tekton-9c46c8c\n\n### Bug Description\nRemove runtime dependency on Build controller (#326)\n\n### Files to Modify\nThe following files need to be fixed:\n- .ko.yaml\n- .ko.yaml.release\n- Gopkg.lock\n- cmd/controller/main.go\n- cmd/creds-init/kodata/HEAD\n- cmd/creds-init/kodata/LICENSE\n- cmd/creds-init/kodata/VENDOR-LICENSE\n- cmd/creds-init/main.go\n- cmd/git-init/kodata/HEAD\n- cmd/git-init/kodata/LICENSE\n- cmd/git-init/kodata/VENDOR-LICENSE\n- cmd/git-init/main.go\n- cmd/nop/kodata/HEAD\n- cmd/nop/kodata/LICENSE\n- cmd/nop/kodata/VENDOR-LICENSE\n- cmd/nop/main.go\n- config/controller.yaml\n- hack/release.sh\n- images/Dockerfile\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types_test.go\n- pkg/credentials/dockercreds/creds.go\n- pkg/credentials/dockercreds/creds_test.go\n- pkg/credentials/gitcreds/basic.go\n- pkg/credentials/gitcreds/creds.go\n- pkg/credentials/gitcreds/creds_test.go\n- pkg/credentials/gitcreds/ssh.go\n- pkg/credentials/initialize.go\n- pkg/reconciler/reconciler.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pod.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pod_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pre_post_build_step.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/build_logs.go\n- test/clients.go\n- test/controller.go\n- test/e2e-tests.sh\n- test/e2e-yaml-tests.sh\n- test/helm_task_test.go\n- test/init_test.go\n- test/kaniko_task_test.go\n- third_party/config/build/LICENSE\n- third_party/config/build/release.yaml\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/clientset.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/doc.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/fake/clientset_generated.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/fake/register.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/scheme/doc.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/scheme/register.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/build.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/build_client.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/buildtemplate.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/clusterbuildtemplate.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/doc.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/doc.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_build.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_build_client.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_buildtemplate.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_clusterbuildtemplate.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/build/interface.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/build/v1alpha1/build.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/build/v1alpha1/buildtemplate.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/build/v1alpha1/clusterbuildtemplate.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/build/v1alpha1/interface.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/factory.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/generic.go\n- vendor/github.com/knative/build/pkg/client/informers/externalversions/internalinterfaces/factory_interfaces.go\n- vendor/github.com/knative/build/pkg/client/listers/build/v1alpha1/build.go\n- vendor/github.com/knative/build/pkg/client/listers/build/v1alpha1/buildtemplate.go\n- vendor/github.com/knative/build/pkg/client/listers/build/v1alpha1/clusterbuildtemplate.go\n- vendor/github.com/knative/build/pkg/client/listers/build/v1alpha1/expansion_generated.go\n- vendor/github.com/knative/build/pkg/system/names.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-9c46c8c"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-9c46c8c"
+      }
+    },
+    "id": "tekton-9c46c8c"
+  },
+  {
+    "prompt": "## Task: tekton-80ebc69\n\n### Bug Description\nAdd ClusterTask new CRD\n\n### Files to Modify\nThe following files need to be fixed:\n- cmd/controller/main.go\n- config/200-clusterrole.yaml\n- config/300-clustertask.yaml\n- docs/Concepts.md\n- docs/using.md\n- pkg/apis/pipeline/v1alpha1/cluster_task_types.go\n- pkg/apis/pipeline/v1alpha1/cluster_task_validation.go\n- pkg/apis/pipeline/v1alpha1/pipeline_defaults.go\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/register.go\n- pkg/apis/pipeline/v1alpha1/task_interface.go\n- pkg/apis/pipeline/v1alpha1/task_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_defaults.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/client/clientset/versioned/typed/pipeline/v1alpha1/clustertask.go\n- pkg/client/clientset/versioned/typed/pipeline/v1alpha1/fake/fake_clustertask.go\n- pkg/client/clientset/versioned/typed/pipeline/v1alpha1/fake/fake_pipeline_client.go\n- pkg/client/clientset/versioned/typed/pipeline/v1alpha1/fake/fake_task.go\n- pkg/client/clientset/versioned/typed/pipeline/v1alpha1/generated_expansion.go\n- pkg/client/clientset/versioned/typed/pipeline/v1alpha1/pipeline_client.go\n- pkg/client/clientset/versioned/typed/pipeline/v1alpha1/task.go\n- pkg/client/informers/externalversions/generic.go\n- pkg/client/informers/externalversions/pipeline/v1alpha1/clustertask.go\n- pkg/client/informers/externalversions/pipeline/v1alpha1/interface.go\n- pkg/client/listers/pipeline/v1alpha1/clustertask.go\n- pkg/client/listers/pipeline/v1alpha1/expansion_generated.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinerunresolution_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskspec.go\n- pkg/reconciler/v1alpha1/taskrun/resources/taskspec_test.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/controller.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-80ebc69"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-80ebc69"
+      }
+    },
+    "id": "tekton-80ebc69"
+  },
+  {
+    "prompt": "## Task: tekton-c747227\n\n### Bug Description\nLink git outputs between tasks\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/Concepts.md\n- docs/using.md\n- examples/invocations/kritis-pvc-run.yaml\n- examples/kritis-pvc-tasks.yaml\n- examples/pipelines/kritis-pvc-pipeline.yaml\n- examples/pipelines/kritis-resources.yaml\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types_test.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/input_output_steps_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinestate.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinestate_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/validate.go\n- pkg/reconciler/v1alpha1/taskrun/resources/build_step_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- pkg/reconciler/v1alpha1/taskrun/resources/pre_post_build_step.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/crd_checks.go\n- test/helm_task_test.go\n- test/pipelinerun_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-c747227"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-c747227"
+      }
+    },
+    "id": "tekton-c747227"
+  },
+  {
+    "prompt": "## Task: tekton-4762621\n\n### Bug Description\nRemove `version` from TaskRun resource binding\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/using.md\n- examples/invocations/run-kritis-test.yaml\n- pkg/apis/pipeline/v1alpha1/cluster_resource.go\n- pkg/apis/pipeline/v1alpha1/git_resource.go\n- pkg/apis/pipeline/v1alpha1/image_resource.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation_test.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- pkg/reconciler/v1alpha1/taskrun/validate_test.go\n- test/cluster_resource_test.go\n- test/kaniko_task_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-4762621"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-4762621"
+      }
+    },
+    "id": "tekton-4762621"
+  },
+  {
+    "prompt": "## Task: tekton-d05bee2\n\n### Bug Description\nAllow Pipelines to be used with different Resources\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/using.md\n- examples/README.md\n- examples/invocations/guestbook-pipeline-run.yaml\n- examples/invocations/kritis-pipeline-run.yaml\n- examples/pipelines/guestbook.yaml\n- examples/pipelines/kritis.yaml\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation.go\n- pkg/apis/pipeline/v1alpha1/pipeline_validation_test.go\n- pkg/apis/pipeline/v1alpha1/pipelinerun_types.go\n- pkg/apis/pipeline/v1alpha1/task_types.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/pipeline/resources/dag.go\n- pkg/reconciler/v1alpha1/pipeline/resources/dag_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/pipelinestate.go\n- pkg/reconciler/v1alpha1/pipelinerun/resources/providedby_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/validate.go\n- pkg/reconciler/v1alpha1/pipelinerun/validate_test.go\n- test/helm_task_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-d05bee2"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-d05bee2"
+      }
+    },
+    "id": "tekton-d05bee2"
+  },
+  {
+    "prompt": "## Task: tekton-b1678bf\n\n### Bug Description\nAdd Description and Default fields to TaskParams\n\n### Files to Modify\nThe following files need to be fixed:\n- docs/task-parameters.md\n- docs/using.md\n- examples/build_task.yaml\n- examples/deploy_tasks.yaml\n- examples/test_tasks.yaml\n- pkg/apis/pipeline/v1alpha1/task_types.go\n- pkg/apis/pipeline/v1alpha1/task_validation_test.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_validation.go\n- pkg/reconciler/v1alpha1/pipelinerun/pipelinerun_test.go\n- pkg/reconciler/v1alpha1/pipelinerun/validate_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply.go\n- pkg/reconciler/v1alpha1/taskrun/resources/apply_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/helm_task_test.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-b1678bf"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-b1678bf"
+      }
+    },
+    "id": "tekton-b1678bf"
+  },
+  {
+    "prompt": "## Task: tekton-4089e04\n\n### Bug Description\nEnsure kaniko e2e test pushes image to registry\n\n### Files to Modify\nThe following files need to be fixed:\n- Gopkg.lock\n- test/README.md\n- test/kaniko_task_test.go\n- vendor/github.com/google/go-containerregistry/LICENSE\n- vendor/github.com/google/go-containerregistry/cmd/ko/test/kodata/kenobi\n- vendor/github.com/google/go-containerregistry/pkg/authn/anon.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/auth.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/authn.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/basic.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/bearer.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/doc.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/helper.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/keychain.go\n- vendor/github.com/google/go-containerregistry/pkg/authn/multikeychain.go\n- vendor/github.com/google/go-containerregistry/pkg/name/check.go\n- vendor/github.com/google/go-containerregistry/pkg/name/digest.go\n- vendor/github.com/google/go-containerregistry/pkg/name/errors.go\n- vendor/github.com/google/go-containerregistry/pkg/name/ref.go\n- vendor/github.com/google/go-containerregistry/pkg/name/registry.go\n- vendor/github.com/google/go-containerregistry/pkg/name/repository.go\n- vendor/github.com/google/go-containerregistry/pkg/name/tag.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/config.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/doc.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/hash.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/image.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/index.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/layer.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/manifest.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/partial/compressed.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/partial/doc.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/partial/image.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/partial/uncompressed.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/partial/with.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/platform.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/delete.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/doc.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/error.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/image.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/list.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/mount.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/options.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/transport/basic.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/transport/bearer.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/transport/doc.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/transport/ping.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/transport/scope.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/transport/transport.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/remote/write.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/types/types.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/v1util/and_closer.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/v1util/nop.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/v1util/verify.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/v1util/zip.go\n- vendor/github.com/google/go-containerregistry/pkg/v1/zz_deepcopy_generated.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-4089e04"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-4089e04"
+      }
+    },
+    "id": "tekton-4089e04"
+  },
+  {
+    "prompt": "## Task: tekton-9031ed4\n\n### Bug Description\nOnly have one set of examples and test that they are valid\n\n### Files to Modify\nThe following files need to be fixed:\n- README.md\n- examples/README.md\n- examples/deploy_tasks.yaml\n- examples/invocations/run-kritis-test.yaml\n- examples/pipelines/guestbook.yaml\n- examples/pipelines/kritis.yaml\n- examples/smoke-test.sh\n- pkg/apis/pipeline/v1alpha1/pipeline_types.go\n- pkg/apis/pipeline/v1alpha1/resource_types.go\n- pkg/apis/pipeline/v1alpha1/task_types.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resource_test.go\n- pkg/reconciler/v1alpha1/taskrun/resources/input_resources.go\n- samples/README.md\n- samples/pipeline_v1alpha1_pipeline.yaml\n- samples/pipeline_v1alpha1_pipelineparams.yaml\n- samples/pipeline_v1alpha1_pipelinerun.yaml\n- samples/pipeline_v1alpha1_resources.yaml\n- samples/pipeline_v1alpha1_task.yaml\n- samples/pipeline_v1alpha1_taskrun.yaml\n- test/README.md\n- test/e2e-tests.sh\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-9031ed4"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-9031ed4"
+      }
+    },
+    "id": "tekton-9031ed4"
+  },
+  {
+    "prompt": "## Task: tekton-c6fe81c\n\n### Bug Description\nAdd inital taskrun controller implementation\n\n### Files to Modify\nThe following files need to be fixed:\n- Gopkg.lock\n- cmd/controller/main.go\n- pkg/apis/pipeline/v1alpha1/task_types.go\n- pkg/apis/pipeline/v1alpha1/taskrun_types.go\n- pkg/apis/pipeline/v1alpha1/zz_generated.deepcopy.go\n- pkg/reconciler/reconciler.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun.go\n- pkg/reconciler/v1alpha1/taskrun/taskrun_test.go\n- test/crd_checks.go\n- test/taskrun_test.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/fake/clientset_generated.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/fake/doc.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/fake/register.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/doc.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_build.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_build_client.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_buildtemplate.go\n- vendor/github.com/knative/build/pkg/client/clientset/versioned/typed/build/v1alpha1/fake/fake_clusterbuildtemplate.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-c6fe81c"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-c6fe81c"
+      }
+    },
+    "id": "tekton-c6fe81c"
+  },
+  {
+    "prompt": "## Task: tekton-fbad053\n\n### Bug Description\nAdd skeleton integration test (#74)\n\n### Files to Modify\nThe following files need to be fixed:\n- DEVELOPMENT.md\n- Gopkg.lock\n- README.md\n- test/README.md\n- test/clients.go\n- test/init_test.go\n- test/pipeline_test.go\n- test/randstring.go\n- vendor/cloud.google.com/go/AUTHORS\n- vendor/cloud.google.com/go/CONTRIBUTORS\n- vendor/cloud.google.com/go/LICENSE\n- vendor/cloud.google.com/go/compute/metadata/metadata.go\n- vendor/github.com/knative/pkg/test/cleanup.go\n- vendor/github.com/knative/pkg/test/clients.go\n- vendor/github.com/knative/pkg/test/e2e_flags.go\n- vendor/github.com/knative/pkg/test/kube_checks.go\n- vendor/github.com/knative/pkg/test/logging/logging.go\n- vendor/github.com/knative/pkg/test/request.go\n- vendor/github.com/knative/pkg/test/spoof/spoof.go\n- vendor/go.opencensus.io/AUTHORS\n- vendor/go.opencensus.io/LICENSE\n- vendor/go.opencensus.io/internal/internal.go\n- vendor/go.opencensus.io/internal/sanitize.go\n- vendor/go.opencensus.io/internal/tagencoding/tagencoding.go\n- vendor/go.opencensus.io/internal/traceinternals.go\n- vendor/go.opencensus.io/opencensus.go\n- vendor/go.opencensus.io/stats/doc.go\n- vendor/go.opencensus.io/stats/internal/record.go\n- vendor/go.opencensus.io/stats/internal/validation.go\n- vendor/go.opencensus.io/stats/measure.go\n- vendor/go.opencensus.io/stats/measure_float64.go\n- vendor/go.opencensus.io/stats/measure_int64.go\n- vendor/go.opencensus.io/stats/record.go\n- vendor/go.opencensus.io/stats/units.go\n- vendor/go.opencensus.io/stats/view/aggregation.go\n- vendor/go.opencensus.io/stats/view/aggregation_data.go\n- vendor/go.opencensus.io/stats/view/collector.go\n- vendor/go.opencensus.io/stats/view/doc.go\n- vendor/go.opencensus.io/stats/view/export.go\n- vendor/go.opencensus.io/stats/view/view.go\n- vendor/go.opencensus.io/stats/view/worker.go\n- vendor/go.opencensus.io/stats/view/worker_commands.go\n- vendor/go.opencensus.io/tag/context.go\n- vendor/go.opencensus.io/tag/doc.go\n- vendor/go.opencensus.io/tag/key.go\n- vendor/go.opencensus.io/tag/map.go\n- vendor/go.opencensus.io/tag/map_codec.go\n- vendor/go.opencensus.io/tag/profile_19.go\n- vendor/go.opencensus.io/tag/profile_not19.go\n- vendor/go.opencensus.io/tag/validate.go\n- vendor/go.opencensus.io/trace/basetypes.go\n- vendor/go.opencensus.io/trace/config.go\n- vendor/go.opencensus.io/trace/doc.go\n- vendor/go.opencensus.io/trace/export.go\n- vendor/go.opencensus.io/trace/internal/internal.go\n- vendor/go.opencensus.io/trace/sampling.go\n- vendor/go.opencensus.io/trace/spanbucket.go\n- vendor/go.opencensus.io/trace/spanstore.go\n- vendor/go.opencensus.io/trace/status_codes.go\n- vendor/go.opencensus.io/trace/trace.go\n- vendor/go.opencensus.io/trace/trace_go11.go\n- vendor/go.opencensus.io/trace/trace_nongo11.go\n- vendor/go.opencensus.io/trace/tracestate/tracestate.go\n- vendor/golang.org/x/net/context/ctxhttp/ctxhttp.go\n- vendor/golang.org/x/net/context/ctxhttp/ctxhttp_pre17.go\n- vendor/golang.org/x/oauth2/AUTHORS\n- vendor/golang.org/x/oauth2/CONTRIBUTORS\n- vendor/golang.org/x/oauth2/LICENSE\n- vendor/golang.org/x/oauth2/google/appengine.go\n- vendor/golang.org/x/oauth2/google/appengine_hook.go\n- vendor/golang.org/x/oauth2/google/appengineflex_hook.go\n- vendor/golang.org/x/oauth2/google/default.go\n- vendor/golang.org/x/oauth2/google/doc_go19.go\n- vendor/golang.org/x/oauth2/google/doc_not_go19.go\n- vendor/golang.org/x/oauth2/google/go19.go\n- vendor/golang.org/x/oauth2/google/google.go\n- vendor/golang.org/x/oauth2/google/jwt.go\n- vendor/golang.org/x/oauth2/google/not_go19.go\n- vendor/golang.org/x/oauth2/google/sdk.go\n- vendor/golang.org/x/oauth2/internal/client_appengine.go\n- vendor/golang.org/x/oauth2/internal/doc.go\n- vendor/golang.org/x/oauth2/internal/oauth2.go\n- vendor/golang.org/x/oauth2/internal/token.go\n- vendor/golang.org/x/oauth2/internal/transport.go\n- vendor/golang.org/x/oauth2/jws/jws.go\n- vendor/golang.org/x/oauth2/jwt/jwt.go\n- vendor/golang.org/x/oauth2/oauth2.go\n- vendor/golang.org/x/oauth2/token.go\n- vendor/golang.org/x/oauth2/transport.go\n- vendor/google.golang.org/appengine/LICENSE\n- vendor/google.golang.org/appengine/appengine.go\n- vendor/google.golang.org/appengine/appengine_vm.go\n- vendor/google.golang.org/appengine/errors.go\n- vendor/google.golang.org/appengine/identity.go\n- vendor/google.golang.org/appengine/internal/api.go\n- vendor/google.golang.org/appengine/internal/api_classic.go\n- vendor/google.golang.org/appengine/internal/api_common.go\n- vendor/google.golang.org/appengine/internal/api_pre17.go\n- vendor/google.golang.org/appengine/internal/app_id.go\n- vendor/google.golang.org/appengine/internal/app_identity/app_identity_service.pb.go\n- vendor/google.golang.org/appengine/internal/base/api_base.pb.go\n- vendor/google.golang.org/appengine/internal/datastore/datastore_v3.pb.go\n- vendor/google.golang.org/appengine/internal/identity.go\n- vendor/google.golang.org/appengine/internal/identity_classic.go\n- vendor/google.golang.org/appengine/internal/identity_vm.go\n- vendor/google.golang.org/appengine/internal/internal.go\n- vendor/google.golang.org/appengine/internal/log/log_service.pb.go\n- vendor/google.golang.org/appengine/internal/main.go\n- vendor/google.golang.org/appengine/internal/main_vm.go\n- vendor/google.golang.org/appengine/internal/metadata.go\n- vendor/google.golang.org/appengine/internal/modules/modules_service.pb.go\n- vendor/google.golang.org/appengine/internal/net.go\n- vendor/google.golang.org/appengine/internal/remote_api/remote_api.pb.go\n- vendor/google.golang.org/appengine/internal/transaction.go\n- vendor/google.golang.org/appengine/internal/urlfetch/urlfetch_service.pb.go\n- vendor/google.golang.org/appengine/namespace.go\n- vendor/google.golang.org/appengine/timeout.go\n- vendor/google.golang.org/appengine/urlfetch/urlfetch.go\n- vendor/k8s.io/client-go/plugin/pkg/client/auth/gcp/gcp.go\n- vendor/k8s.io/client-go/third_party/forked/golang/template/exec.go\n- vendor/k8s.io/client-go/third_party/forked/golang/template/funcs.go\n- vendor/k8s.io/client-go/util/jsonpath/doc.go\n- vendor/k8s.io/client-go/util/jsonpath/jsonpath.go\n- vendor/k8s.io/client-go/util/jsonpath/node.go\n- vendor/k8s.io/client-go/util/jsonpath/parser.go\n\n### Your Task\n1. Read the bug description above.\n2. Examine the source files in `/home/ubuntu/repo/`.\n3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.\n4. Modify the source files to fix the bug.\n5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.\n6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).\n7. **SUBMIT:** Call the `evaluate()` grader (`grade_problem`) to test your changes and evaluate your score.\n\n### \u00f0\u0178\u203a\u2018 CRITICAL INSTRUCTIONS - READ CAREFULLY BEFORE BEGINNING \u00f0\u0178\u203a\u2018\n\n#### 1. ONE SHOT SUBMISSION\n* **You can only call `evaluate()` ONCE at the end of your coding session.**\n* This is your final submission.\n* **Do not** use `grade_problem` to debug. Use local tools instead.\n\n#### 2. USE LOCAL TOOLS\n* Use the bash tool to run `go test` or `go build` as much as you need before submitting.\n* Verify your logic on a small sample before applying broadly.\n\n#### 3. SECURITY & SCOPE\n* **ONLY** modify the source files listed above.\n* **DO NOT** touch `go.mod`, `go.sum`, hidden `.git` directories, or build scripts.\n\n### Repository Location\n`/home/ubuntu/repo/` (Tekton Pipeline)\n",
+    "mcp_config": {
+      "hud": {
+        "url": "https://mcp.hud.ai/v3/mcp",
+        "headers": {
+          "Authorization": "Bearer ${HUD_API_KEY}",
+          "Mcp-Image": "rishabn/pipeline-env:v3.0",
+          "Env-Openai-Api-Key": "${OPENAI_API_KEY}",
+          "Env-Anthropic-Api-Key": "${ANTHROPIC_API_KEY}"
+        }
+      }
+    },
+    "setup_tool": {
+      "name": "setup_problem",
+      "arguments": {
+        "problem_id": "tekton-fbad053"
+      }
+    },
+    "evaluate_tool": {
+      "name": "grade_problem",
+      "arguments": {
+        "problem_id": "tekton-fbad053"
+      }
+    },
+    "id": "tekton-fbad053"
+  }
+]

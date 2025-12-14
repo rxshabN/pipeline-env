@@ -147,7 +147,6 @@ The following files need to be fixed:
 1. Read the bug description above.
 2. Examine the source files in `/home/ubuntu/repo/`.
 3. Analyze the test files in `/home/ubuntu/repo/test/` or files ending in `_test.go`.
-   **Note:** The tests are the "Source of Truth". They have already been updated to reflect the desired behavior. Use them as your specification.
 4. Modify the source files to fix the bug.
 5. **VERIFY LOCALLY:** You are explicitly ALLOWED and ENCOURAGED to run `go test ./...` or `go test -v <package>` and `go build` in the terminal to verify your fix locally.
 6. Once you're confident with all your fixes, you can opt to create a summary of the changes made (do this once only).

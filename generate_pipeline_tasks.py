@@ -134,7 +134,7 @@ from hud_controller.graders import AgentPatchGrader
 
 logger = logging.getLogger(__name__)
 
-# AUTOMATICALLY GENERATED FROM hud_tasks.json
+# AUTOMATICALLY GENERATED FROM hud_final_tasks.json
 """
 
     for task in tasks:

@@ -1,21 +1,21 @@
 version: '1.2'
 images:
   local: pipeline-env:0.1.0
-  full: pipeline-env:0.1.0@sha256:e720029180f34bfe65e56daa305f3521b562541857a7c375c8ccb50e149459b5
-  pushed: rishabn/pipeline-env:v1.0
+  full: pipeline-env:0.1.0@sha256:3ceeabb671562c78be6b4ae0c2b1925a642c853e9c115954f301f029861fa4d6
+  pushed: rishabn/pipeline-env:v2.0
 build:
-  generatedAt: 2025-12-17T13:59:43.776379+00:00Z
+  generatedAt: 2025-12-20T12:41:44.589030+00:00Z
   hudVersion: 0.4.74
   directory: pipeline-env
   version: 0.1.0
-  sourceHash: 0f897441a8776cf3519240fe4e1bdf8742f838898008658c31c2b2db559baa97
+  sourceHash: 9eecfa38e896bdc7182b81091cd03b02c7d639dda24536674eea970866b8d985
   baseImage: ubuntu:24.04
   platform: linux/amd64
   sourceFiles:
   - Dockerfile
   - pyproject.toml
 environment:
-  initializeMs: 3984
+  initializeMs: 4148
   toolCount: 4
   runtime:
     python: 3.12.3
@@ -125,6 +125,6 @@ tools:
     type: object
 push:
   source: pipeline-env:0.1.0
-  pushedAt: '2025-12-17T14:51:00.848507Z'
+  pushedAt: '2025-12-20T12:55:04.457687Z'
   registry: docker.io
-  image_with_tag: rishabn/pipeline-env:v1.0
+  image_with_tag: rishabn/pipeline-env:v2.0

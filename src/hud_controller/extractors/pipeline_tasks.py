@@ -152,6 +152,10 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+- This is an older repository (circa 2019) using Go modules with a vendor directory.
+- Dependency issues may arise due to the age of the codebase.
+- Ensure you run 'go mod tidy' and 'go mod vendor' if you modify imports or dependencies.
+- The grader may report 0 tests if the build fails silently; verify 'go test ./...' compiles locally.
 
     """,
     hints=[],
@@ -888,6 +892,10 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+- This is an older repository (circa 2019) using Go modules with a vendor directory.
+- Dependency issues may arise due to the age of the codebase.
+- Ensure you run 'go mod tidy' and 'go mod vendor' if you modify imports or dependencies.
+- The grader may report 0 tests if the build fails silently; verify 'go test ./...' compiles locally.
 
 HITNS:
 - This task addresses technical debt identified by static analysis tools. Focus on removing unused variables and constants (dead code) that are declared but never referenced in the package.
@@ -1150,10 +1158,10 @@ HINTS (FOR YOUR ASSISTANCE):
 - **Implement Validation:** In `pkg/apis/pipeline/v1alpha1/taskrun_validation.go`, update the `validateTaskResourceBinding` function. Enforce strict mutual exclusivity: a binding must have **either** a `ResourceRef` (name) **or** a `ResourceSpec` (inline definition), but absolutely not both and not neither.
 - 
 - **Refactor Resource Resolution:** The core logic resides in `pkg/reconciler/v1alpha1/taskrun/resources/taskresourceresolution.go`. You must modify the `ResolveTaskResources` function.
-    - Iterate through the input and output bindings.
-    - Check if the binding contains a `ResourceSpec`.
-    - If it does, use that spec directly to create the resource object (wrapping it in a `PipelineResource`).
-    - If it doesn't (and has a `ResourceRef`), proceed with the existing logic of looking up the resource by name from the `resourceLister`.
+- Iterate through the input and output bindings.
+- Check if the binding contains a `ResourceSpec`.
+- If it does, use that spec directly to create the resource object (wrapping it in a `PipelineResource`).
+- If it doesn't (and has a `ResourceRef`), proceed with the existing logic of looking up the resource by name from the `resourceLister`.
 
     """,
     hints=[],
@@ -1917,6 +1925,10 @@ Instructions:
 CRITICAL RULES (READ CAREFULL BEFORE BEGINNING):
 - DIRECT EDITING: Use `str_replace_editor` to edit files directly.
 - **USE LOCAL TOOLS:** Use the bash tool to run `go test` and `go build` as much as you need before submitting.
+- This is an older repository (circa 2019) using Go modules with a vendor directory.
+- Dependency issues may arise due to the age of the codebase.
+- Ensure you run 'go mod tidy' and 'go mod vendor' if you modify imports or dependencies.
+- The grader may report 0 tests if the build fails silently; verify 'go test ./...' compiles locally.
 
     """,
     hints=[],
